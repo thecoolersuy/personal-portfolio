@@ -1,5 +1,7 @@
 import React from 'react';
 import { Mail } from 'lucide-react';
+import aboutRanjana from '../assets/aboutranjanalipi.png';
+import birdGif from '../assets/bird.gif';
 
 export default function About() {
   return (
@@ -10,11 +12,11 @@ export default function About() {
           <h2 className="font-heading font-bold text-[#444] text-4xl lg:text-[41.6px] leading-none z-10 text-center">
             about me
           </h2>
-          <div className="mt-2 text-secondary opacity-50 select-none pointer-events-none w-[120px] h-[67.5px] flex items-center justify-center">
+          <div className="mt-2 flex items-center justify-center">
             <img 
-              src="https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/quote.svg" 
-              alt="decorative" 
-              className="w-10 h-10 opacity-30" 
+              src={aboutRanjana} 
+              alt="about in Ranjana Lipi" 
+              className="h-[67.5px] w-[120px] object-contain opacity-50" 
             />
           </div>
         </div>
@@ -24,29 +26,27 @@ export default function About() {
           
           {/* Left Column - Image Abstract */}
           <div className="flex justify-center items-start lg:pl-[63.19px] lg:pt-[47.19px]">
-            <div className="bg-surface shadow-[0px_0px_20px_0px_#e5e5e5] w-[200px] h-[200px] rounded-[24px] flex items-center justify-center p-8">
-              <img 
-                src="https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/mountain-snow.svg" 
-                alt="mountain climbing" 
-                className="w-full h-full object-contain opacity-50" 
-                style={{ filter: 'grayscale(100%)' }}
-              />
-            </div>
+            <img 
+              src={birdGif} 
+              alt="bird animation" 
+              className="w-[240px] h-[240px] object-contain" 
+            />
           </div>
 
           {/* Right Column - Text Content */}
-          <div className="flex flex-col gap-6 font-body font-extralight text-[16px] text-secondary leading-relaxed bg-surface rounded-[30px] p-2 md:p-6 relative">
+          <div className="flex flex-col gap-6 font-body font-medium text-[16px] text-secondary leading-relaxed bg-surface rounded-[30px] p-2 md:p-6 relative">
             <p className="m-0 text-left">
-              I'm currently doing AI Safety research and building <a href="#" className="text-accent hover:underline transition-all">AI Safety Nepal</a> and legal research platform <a href="#" className="text-accent hover:underline transition-all">Edavor</a>. I graduated in Computer Engineering from Pulchowk Campus, Tribhuvan University. I enjoy building ML solutions and exploring the cool ideas behind them. I also love organizing and participating in community events.
+              I’m a Frontend Developer passionate about crafting clean, interactive, and user-centered web experiences. I'm currently building a dev blog application <a href="#" className="text-accent hover:underline transition-all">Writr</a>. I am pursuing my BSc(Hons) in Computing from Softwarica College of IT and e-Commerce, Coventry University. I enjoy building frontend solutions, exploring modern frontend concepts, and experimenting with ideas around UI, performance, and developer experience.
             </p>
 
             <p className="m-0 text-left">
-              When I'm not glued to a screen (rare, but it happens), you'll probably find me reading a book, painting something, or going on long walks.
+             When I’m not glued to a screen (rare, but it happens), I’m probably hiking, exploring design ideas, or out on a long walk.
+
             </p>
 
             <div className="flex items-center justify-start gap-2 mt-4 text-left">
               <Mail size={16} className="text-secondary" />
-              <span className="italic"> yunika.bajracharya at gmail.com</span>
+              <span className="italic"> suyalsahukhala787@gmail.com at gmail.com</span>
             </div>
           </div>
         </div>
