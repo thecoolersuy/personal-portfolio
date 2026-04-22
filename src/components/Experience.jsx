@@ -83,8 +83,8 @@ export default function Experience() {
             <div key={index} className="bg-white flex items-center p-[18px] rounded-[5px] shadow-[0px_2px_12px_0px_rgba(60,60,90,0.08),0px_1px_2px_0px_rgba(60,60,90,0.04)] w-full">
               <img src={exp.logo} alt={exp.company} className="size-[35px] rounded-[5px] object-cover" />
               <div className="flex flex-col items-start pl-[25px] pr-[15px] flex-grow">
-                <h3 className="font-light text-[#333] text-[18.7px] leading-tight mb-1">{exp.role}</h3>
-                <p className="font-light text-[#595959] text-[16px] leading-tight mb-1">{exp.company}</p>
+                <h3 className="font-body font-semibold text-[#333333] text-[18.7px] leading-tight mb-1">{exp.role}</h3>
+                <p className="font-body font-light text-[#595959] text-[16px] leading-tight mb-1">{exp.company}</p>
                 <span className="font-light text-[#595959] text-[13px]">{exp.date}</span>
               </div>
             </div>

@@ -124,16 +124,16 @@ export default function Projects() {
                 </div>
 
                 <div>
-                  <h3 className="font-light text-[#333] text-[24px] mb-[4px]">{project.name}</h3>
+                  <h3 className="font-body font-semibold text-[#333333] text-[24px] mb-[4px]">{project.name}</h3>
                   {project.description && (
-                    <p className="font-light text-[#333] text-[17.6px] leading-normal">
+                    <p className="font-light text-[#333333] text-[17.6px] leading-normal">
                       {project.description}
                     </p>
                   )}
                 </div>
                 {project.featured && (
-                  <button className="w-fit border border-[#595959] bg-white rounded px-[11px] py-[11px] flex items-center gap-[8px] text-[#333] text-[16px] font-light hover:bg-gray-50 transition-colors">
-                    <span>Try app</span>
+                  <button className="w-fit border border-[#595959] bg-white rounded px-[11px] py-[11px] flex items-center gap-[8px] text-[#333] text-[16px] font-light hover:bg-[#f0e9e6] hover:border-[#795547] hover:shadow-[3px_3px_0px_0px_#795547] transition-all">
+                    <span className='font-body font-semibold'>Try app</span>
                     <img src={send} alt='send' className="w-[24px] h-[24px]"  />
                   </button>
                 )}

@@ -77,8 +77,8 @@ export default function Hero() {
           </div>
 
           {/* CTA Button */}
-          <button className="flex items-center gap-[8px] px-[11px] py-[11px] bg-white border border-[#595959] text-[#333] font-light text-[16px] font-['Nunito:ExtraLight',sans-serif] hover:bg-gray-50 transition-colors">
-            <span>Say Hello!</span>
+          <button className="flex items-center gap-[8px] px-[11px] py-[11px] bg-white border border-[#595959] text-[#333] font-light text-[16px] font-['Nunito:ExtraLight',sans-serif] hover:bg-[#f0e9e6] hover:border-[#795547] hover:shadow-[3px_3px_0px_0px_#795547] transition-all">
+            <span className='font-body font-semibold'>Say Hello!</span>
             <img src={send} alt='send' className="w-[24px] h-[24px]" />
           </button>
         </div>
