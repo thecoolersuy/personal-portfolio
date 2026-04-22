@@ -8,6 +8,7 @@ import leftarrow from '../assets/othericons/left.png';
 import rightarrow from '../assets/othericons/right.png';
 import projectsRanjana from '../assets/ranjanalipiimages/projectsranjanalipi.png';
 import send from "../assets/othericons/delivery.png"
+import { projectsData } from '../data/projectsData';
 
 export default function Projects() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -15,70 +16,7 @@ export default function Projects() {
   const nextRef = useRef(null);
   const swiperRef = useRef(null);
 
-  const projects = [
-    {
-      id: 1,
-      name: "Edavor",
-      description: "An AI-based legal tech platform that helps individuals understand their rights through simple, accessible legal information in their own language. It also supports legal teams with faster and smarter research tools and real-time legal updates.",
-      image: "https://via.placeholder.com/391x257",
-      link: "#",
-      featured: true
-    },
-    {
-      id: 2,
-      name: "Major Project",
-      image: "https://via.placeholder.com/391x257",
-      link: "#"
-    },
-    {
-      id: 3,
-      name: "Niti",
-      image: "https://via.placeholder.com/391x257",
-      link: "#"
-    },
-    {
-      id: 4,
-      name: "Fall Detection",
-      image: "https://via.placeholder.com/391x257",
-      link: "#"
-    },
-    {
-      id: 5,
-      name: "Newsly",
-      image: "https://via.placeholder.com/391x257",
-      link: "#"
-    },
-    {
-      id: 6,
-      name: "Sahayatri",
-      image: "https://via.placeholder.com/391x257",
-      link: "#"
-    },
-    {
-      id: 7,
-      name: "Maitrika",
-      image: "https://via.placeholder.com/391x257",
-      link: "#"
-    },
-    {
-      id: 8,
-      name: "Project 1",
-      image: "https://via.placeholder.com/391x257",
-      link: "#"
-    },
-    {
-      id: 9,
-      name: "Project 2",
-      image: "https://via.placeholder.com/391x257",
-      link: "#"
-    },
-    {
-      id: 10,
-      name: "Project 3",
-      image: "https://via.placeholder.com/391x257",
-      link: "#"
-    }
-  ];
+  const projects = projectsData;
 
   return (
     <section id="projects" className="flex flex-col items-center pb-[32px] pt-[96px] w-full relative">
@@ -123,8 +61,20 @@ export default function Projects() {
                   />
                 </div>
 
-                <div>
+                <div className='flex flex-col gap-3'>
                   <h3 className="font-body font-semibold text-[#333333] text-[24px] mb-[4px]">{project.name}</h3>
+                  {project.technologies && (
+                    <div className="flex flex-wrap gap-[8px] mb-[12px]">
+                      {project.technologies.map((tech, index) => (
+                        <span
+                          key={index}
+                          className="bg-[#f0e9e6] px-[6px] py-[5px] rounded-[2px] text-[14px] font-light text-[#1a1a1a] shadow-[1px_1px_1px_0px_#795547]"
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+                  )}
                   {project.description && (
                     <p className="font-light text-[#333333] text-[17.6px] leading-normal">
                       {project.description}
@@ -132,17 +82,20 @@ export default function Projects() {
                   )}
                 </div>
                 {project.featured && (
-                  <button className="w-fit border border-[#595959] bg-white rounded px-[11px] py-[11px] flex items-center gap-[8px] text-[#333] text-[16px] font-light hover:bg-[#f0e9e6] hover:border-[#795547] hover:shadow-[3px_3px_0px_0px_#795547] transition-all">
+                  <a 
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-fit border border-[#595959] bg-white rounded px-[11px] py-[11px] flex items-center gap-[8px] text-[#333] text-[16px] font-light hover:bg-[#f0e9e6] hover:border-[#795547] hover:shadow-[3px_3px_0px_0px_#795547] transition-all no-underline"
+                  >
                     <span className='font-body font-semibold'>Try app</span>
                     <img src={send} alt='send' className="w-[24px] h-[24px]"  />
-                  </button>
+                  </a>
                 )}
               </div>
             </SwiperSlide>
           ))}
         </Swiper>
-
-        {/* Navigation Buttons */}
         <button
           ref={prevRef}
           onClick={() => swiperRef.current?.swiper.slidePrev()}
@@ -158,8 +111,6 @@ export default function Projects() {
           <img src={rightarrow} alt="Next" />
         </button>
       </div>
-
-      {/* Pagination Dots */}
       <div className="flex gap-[8px] justify-center mt-[20px] pt-[10px]">
         {projects.map((_, index) => (
           <button

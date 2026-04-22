@@ -22,7 +22,6 @@ export default function Footer() {
   return (
     <footer className="bg-gradient-to-b from-[#f7f7f7] to-[#b8b1ae] w-full pt-[150px] pb-[64px] px-4 sm:px-[441px]">
       <div className="max-w-[968px] w-full mx-auto flex flex-col gap-[32px]">
-        {/* Navigation Links */}
         <nav className="flex gap-[24px] justify-center flex-wrap">
           {navigationLinks.map((link) => (
             <a
@@ -34,8 +33,6 @@ export default function Footer() {
             </a>
           ))}
         </nav>
-
-        {/* Social Media Icons */}
         <div className="flex gap-[9.6px] justify-center flex-wrap">
           {socialLinks.map((social, index) => (
             <a
@@ -53,8 +50,6 @@ export default function Footer() {
             </a>
           ))}
         </div>
-
-        {/* Copyright */}
         <div className="text-center">
           <p className="font-light text-[#595959] text-[16px] flex gap-[10px] justify-center flex-wrap">
             <span>©2026</span>
