@@ -4,9 +4,9 @@ import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import blogsRanjana from '../assets/blogsranjanalipi.png';
-import leftarrow from '../assets/left.png';
-import rightarrow from '../assets/right.png';
+import blogsRanjana from '../assets/ranjanalipiimages/blogsranjanalipi.png';
+import leftarrow from '../assets/othericons/left.png';
+import rightarrow from '../assets/othericons/right.png';
 
 export default function Blog() {
   const [activeIndex, setActiveIndex] = useState(0);

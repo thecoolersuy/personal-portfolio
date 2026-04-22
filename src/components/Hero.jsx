@@ -1,21 +1,21 @@
 import React, { useState } from 'react';
-import linkedinDefaultSvg from '../assets/linkedin-default.svg';
-import linkedinHoverSvg from '../assets/linkedin-hover.svg';
-import githubDefaultSvg from '../assets/github-default.svg';
-import githubHoverSvg from '../assets/github-hover.svg';
-import twitterDefaultSvg from '../assets/twitter-default.svg';
-import twitterHoverSvg from '../assets/twitter-hover.svg';
-import mediumDefaultSvg from '../assets/medium-default.svg';
-import mediumHoverSvg from '../assets/medium-hover.svg';
-import instagramDefaultSvg from '../assets/instagram-default.svg';
-import instagramHoverSvg from '../assets/instagram-hover.svg';
-import facebookDefaultSvg from '../assets/facebook-default.svg';
-import facebookHoverSvg from '../assets/facebook-hover.svg';
-import mailDefaultSvg from '../assets/mail-default.svg';
-import mailHoverSvg from '../assets/mail-hover.svg';
-import wave from '../assets/wave.png';
-import picture from "../assets/hero.jpeg"
-import send from "../assets/delivery.png"
+import linkedinDefaultSvg from '../assets/socialmediaicons/linkedin-default.svg';
+import linkedinHoverSvg from '../assets/socialmediaicons/linkedin-hover.svg';
+import githubDefaultSvg from '../assets/socialmediaicons/github-default.svg';
+import githubHoverSvg from '../assets/socialmediaicons/github-hover.svg';
+import twitterDefaultSvg from '../assets/socialmediaicons/twitter-default.svg';
+import twitterHoverSvg from '../assets/socialmediaicons/twitter-hover.svg';
+import mediumDefaultSvg from '../assets/socialmediaicons/medium-default.svg';
+import mediumHoverSvg from '../assets/socialmediaicons/medium-hover.svg';
+import instagramDefaultSvg from '../assets/socialmediaicons/instagram-default.svg';
+import instagramHoverSvg from '../assets/socialmediaicons/instagram-hover.svg';
+import facebookDefaultSvg from '../assets/socialmediaicons/facebook-default.svg';
+import facebookHoverSvg from '../assets/socialmediaicons/facebook-hover.svg';
+import mailDefaultSvg from '../assets/socialmediaicons/mail-default.svg';
+import mailHoverSvg from '../assets/socialmediaicons/mail-hover.svg';
+import wave from '../assets/othericons/wave.png';
+import picture from "../assets/othericons/hero.jpeg"
+import send from "../assets/othericons/delivery.png"
 
 export default function Hero() {
   const [hoveredIcon, setHoveredIcon] = useState(null);

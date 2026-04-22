@@ -4,10 +4,10 @@ import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import leftarrow from '../assets/left.png';
-import rightarrow from '../assets/right.png';
-import projectsRanjana from '../assets/projectsranjanalipi.png';
-import send from "../assets/delivery.png"
+import leftarrow from '../assets/othericons/left.png';
+import rightarrow from '../assets/othericons/right.png';
+import projectsRanjana from '../assets/ranjanalipiimages/projectsranjanalipi.png';
+import send from "../assets/othericons/delivery.png"
 
 export default function Projects() {
   const [activeIndex, setActiveIndex] = useState(0);

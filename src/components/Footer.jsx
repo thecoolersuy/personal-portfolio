@@ -1,8 +1,8 @@
-import linkedinSvg from "../assets/linkedin.svg";
-import githubSvg from "../assets/github.svg";
-import twitterSvg from "../assets/twitter.svg";
-import mailSvg from "../assets/mail.svg";
-import instagramSvg from "../assets/instagram.svg";
+import linkedinSvg from "../assets/socialmediaicons/linkedin.svg";
+import githubSvg from "../assets/socialmediaicons/github.svg";
+import twitterSvg from "../assets/socialmediaicons/twitter.svg";
+import mailSvg from "../assets/socialmediaicons/mail.svg";
+import instagramSvg from "../assets/socialmediaicons/instagram.svg";
 
 export default function Footer() {
   const navigationLinks = [

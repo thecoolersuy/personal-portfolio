@@ -1,7 +1,7 @@
 import React from 'react';
 import { Mail } from 'lucide-react';
-import aboutRanjana from '../assets/aboutranjanalipi.png';
-import birdGif from '../assets/bird.gif';
+import aboutRanjana from '../assets/ranjanalipiimages/aboutranjanalipi.png';
+import birdGif from '../assets/othericons/bird.gif';
 
 export default function About() {
   return (

@@ -1,9 +1,9 @@
 import React from 'react';
-import experienceRanjana from '../assets/experienceranjanalipi.png';
-import educationIcon from '../assets/education.png';
-import experienceIcon from '../assets/rocket.png';
-import volunteeringIcon from '../assets/volunteering.png';
-import awardIcon from '../assets/award.png';
+import experienceRanjana from '../assets/ranjanalipiimages/experienceranjanalipi.png';
+import educationIcon from '../assets/othericons/education.png';
+import experienceIcon from '../assets/othericons/rocket.png';
+import volunteeringIcon from '../assets/othericons/volunteering.png';
+import awardIcon from '../assets/othericons/award.png';
 
 export default function Experience() {
   const experiences = [
