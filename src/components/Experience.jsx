@@ -1,5 +1,9 @@
 import React from 'react';
 import experienceRanjana from '../assets/experienceranjanalipi.png';
+import educationIcon from '../assets/education.png';
+import experienceIcon from '../assets/rocket.png';
+import volunteeringIcon from '../assets/volunteering.png';
+import awardIcon from '../assets/award.png';
 
 export default function Experience() {
   const experiences = [
@@ -52,17 +56,24 @@ export default function Experience() {
         {/* Tabs */}
         <div className="flex w-full justify-between sm:justify-center sm:gap-4 border-b border-gray-200 pb-4">
           <div className="flex flex-col items-center text-gray-500 cursor-pointer">
-            <span className="text-[16px] px-2 py-1">Education</span>
+            <img src={educationIcon} alt="Education" className="h-[21px] w-[20px] mb-2 object-contain" />
+            <span className=" ont-body font-semibold text-[#1f1f1f] text-[16px] px-2 py-1">Education</span>
           </div>
-          <div className="flex flex-col items-center text-[#795547] border-b-2 border-[#795547] cursor-pointer">
-            <span className="text-[16px] px-2 py-1">Experience</span>
+          <div className=" ont-body font-semibold text-[#1f1f1f] flex flex-col items-center text-[#795547] border-b-2 border-[#795547] cursor-pointer">
+            <img src={experienceIcon} alt="Experience" className="h-[21px] w-[20px] mb-2 object-contain" />
+            <span className="text-[16px] px-2 py-1 text-[#795547]">Experience</span>
           </div>
-          <div className="flex flex-col items-center text-gray-500 cursor-pointer">
-            <span className="text-[16px] px-2 py-1">Volunteering</span>
+          <div className=" font-body font-semibold text-[#1f1f1f] flex flex-col items-center text-gray-500 cursor-pointer">
+            <img src={volunteeringIcon} alt="Volunteering" className="h-[21px] w-[20px] mb-2 object-contain" />
+            <span className="text-[16px] px-2 py-1 text-[#1f1f1f]">Volunteering</span>
           </div>
-          <div className="flex flex-col items-center text-gray-500 cursor-pointer">
-            <span className="text-[16px] px-2 py-1 hidden sm:block">Award & Scholarship</span>
-            <span className="text-[16px] px-2 py-1 sm:hidden">Awards</span>
+          <div className="flex flex-col items-center text-[#1f1f1f] cursor-pointer">
+            <img src={awardIcon} alt="Award" className="h-[21px] w-[20px] mb-2 object-contain" />
+            <div className="flex flex-row items-center">
+              <span className="font-body font-semibold text-[16px]">Award</span>
+              <span className="text-[10px] mx-1">⬥</span>
+              <span className="text-[16px] font-body font-semibold">Scholarship</span>
+            </div>
           </div>
         </div>
 

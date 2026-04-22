@@ -4,7 +4,10 @@ import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import leftarrow from '../assets/left.png';
+import rightarrow from '../assets/right.png';
 import projectsRanjana from '../assets/projectsranjanalipi.png';
+import send from "../assets/delivery.png"
 
 export default function Projects() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -92,16 +95,12 @@ export default function Projects() {
         </div>
       </div>
 
-      <div className="relative w-full flex items-center justify-center pt-[15px] px-[41px]">
+      <div className="relative w-full flex items-center justify-center pt-[15px] px-4">
         <Swiper
           ref={swiperRef}
           modules={[Navigation, Pagination]}
           spaceBetween={0}
           slidesPerView={1}
-          navigation={{
-            prevEl: prevRef.current,
-            nextEl: nextRef.current,
-          }}
           onBeforeInit={(swiper) => {
             swiper.params.navigation.prevEl = prevRef.current;
             swiper.params.navigation.nextEl = nextRef.current;
@@ -109,13 +108,13 @@ export default function Projects() {
           onSlideChange={(swiper) => {
             setActiveIndex(swiper.activeIndex);
           }}
-          className="w-full max-w-[750px]"
+          className="w-full max-w-[668px]"
           centeredSlides={true}
           centeredSlidesBounds={true}
         >
           {projects.map((project) => (
             <SwiperSlide key={project.id} className="flex justify-center">
-              <div className="w-[668px] bg-white border border-[rgba(0,0,0,0.1)] rounded-[3px] shadow-[2px_3px_5px_0px_#f0e9e6] p-[25px] flex flex-col gap-[15px]">
+              <div className="w-full bg-white rounded-[3px] p-[25px] flex flex-col gap-[15px]">
                 <div className="h-[257px] w-full bg-gray-100 rounded overflow-hidden flex items-center justify-center">
                   <img 
                     src={project.image} 
@@ -135,9 +134,7 @@ export default function Projects() {
                 {project.featured && (
                   <button className="w-fit border border-[#595959] bg-white rounded px-[11px] py-[11px] flex items-center gap-[8px] text-[#333] text-[16px] font-light hover:bg-gray-50 transition-colors">
                     <span>Try app</span>
-                    <svg className="w-[24px] h-[24px]" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                    </svg>
+                    <img src={send} alt='send' className="w-[24px] h-[24px]"  />
                   </button>
                 )}
               </div>
@@ -148,15 +145,17 @@ export default function Projects() {
         {/* Navigation Buttons */}
         <button
           ref={prevRef}
-          className="absolute left-[5px] bg-[rgba(236,234,248,0.5)] hover:bg-[rgba(236,234,248,0.7)] rounded-[10px] w-[50px] h-[50px] flex items-center justify-center text-[#795547] text-[22px] font-normal transition-colors top-1/2 -translate-y-1/2 z-10"
+          onClick={() => swiperRef.current?.swiper.slidePrev()}
+          className="absolute left-[362px] bg-[rgba(236,234,248,0.5)] hover:bg-[rgba(236,234,248,0.7)] rounded-[10px] w-[50px] h-[50px] flex items-center justify-center text-[#795547] text-[22px] font-normal transition-colors top-1/2 -translate-y-1/2 z-10"
         >
-          prev
+          <img src={leftarrow} alt="Previous" />
         </button>
         <button
           ref={nextRef}
-          className="absolute right-[5px] bg-[rgba(236,234,248,0.5)] hover:bg-[rgba(236,234,248,0.7)] rounded-[10px] w-[50px] h-[50px] flex items-center justify-center text-[#795547] text-[22px] font-normal transition-colors top-1/2 -translate-y-1/2 z-10"
+          onClick={() => swiperRef.current?.swiper.slideNext()}
+          className="absolute right-[362px] bg-[rgba(236,234,248,0.5)] hover:bg-[rgba(236,234,248,0.7)] rounded-[10px] w-[50px] h-[50px] flex items-center justify-center text-[#795547] text-[22px] font-normal transition-colors top-1/2 -translate-y-1/2 z-10"
         >
-          next
+          <img src={rightarrow} alt="Next" />
         </button>
       </div>
 

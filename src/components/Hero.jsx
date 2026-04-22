@@ -1,23 +1,33 @@
-import React from 'react';
-import linkedinSvg from '../assets/linkedin.svg';
-import githubSvg from '../assets/github.svg';
-import twitterSvg from '../assets/twitter.svg';
-import mediumSvg from '../assets/medium.svg';
-import instagramSvg from '../assets/instagram.svg';
-import facebookSvg from '../assets/facebook.svg';
-import mailSvg from '../assets/mail.svg';
+import React, { useState } from 'react';
+import linkedinDefaultSvg from '../assets/linkedin-default.svg';
+import linkedinHoverSvg from '../assets/linkedin-hover.svg';
+import githubDefaultSvg from '../assets/github-default.svg';
+import githubHoverSvg from '../assets/github-hover.svg';
+import twitterDefaultSvg from '../assets/twitter-default.svg';
+import twitterHoverSvg from '../assets/twitter-hover.svg';
+import mediumDefaultSvg from '../assets/medium-default.svg';
+import mediumHoverSvg from '../assets/medium-hover.svg';
+import instagramDefaultSvg from '../assets/instagram-default.svg';
+import instagramHoverSvg from '../assets/instagram-hover.svg';
+import facebookDefaultSvg from '../assets/facebook-default.svg';
+import facebookHoverSvg from '../assets/facebook-hover.svg';
+import mailDefaultSvg from '../assets/mail-default.svg';
+import mailHoverSvg from '../assets/mail-hover.svg';
 import wave from '../assets/wave.png';
 import picture from "../assets/hero.jpeg"
+import send from "../assets/delivery.png"
 
 export default function Hero() {
+  const [hoveredIcon, setHoveredIcon] = useState(null);
+
   const socialLinks = [
-    { icon: mailSvg, href: 'mailto:hello@example.com', label: 'Email' },
-    { icon: linkedinSvg, href: '#', label: 'LinkedIn' },
-    { icon: githubSvg, href: '#', label: 'GitHub' },
-    { icon: twitterSvg, href: '#', label: 'Twitter' },
-    { icon: instagramSvg, href: '#', label: 'Instagram' },
-    { icon: mediumSvg, href: '#', label: 'Medium' },
-    { icon: facebookSvg, href: '#', label: 'Facebook' }
+    { default: mailDefaultSvg, hover: mailHoverSvg, href: 'mailto:hello@example.com', label: 'Email', id: 'mail' },
+    { default: linkedinDefaultSvg, hover: linkedinHoverSvg, href: '#', label: 'LinkedIn', id: 'linkedin' },
+    { default: githubDefaultSvg, hover: githubHoverSvg, href: '#', label: 'GitHub', id: 'github' },
+    { default: twitterDefaultSvg, hover: twitterHoverSvg, href: '#', label: 'Twitter', id: 'twitter' },
+    { default: instagramDefaultSvg, hover: instagramHoverSvg, href: '#', label: 'Instagram', id: 'instagram' },
+    { default: mediumDefaultSvg, hover: mediumHoverSvg, href: '#', label: 'Medium', id: 'medium' },
+    { default: facebookDefaultSvg, hover: facebookHoverSvg, href: '#', label: 'Facebook', id: 'facebook' }
   ];
 
   return (
@@ -25,19 +35,21 @@ export default function Hero() {
       <div className="max-w-[968px] w-full grid grid-cols-[120px_auto_auto] gap-[8px] items-center">
 
         {/* Social Icons - Column 1 */}
-        <div className="flex flex-col gap-[9.2px] items-end justify-center pr-[87px]">
-          {socialLinks.map((social, index) => (
+        <div className="flex flex-col gap-[15px] items-end justify-center pr-[87px]">
+          {socialLinks.map((social) => (
             <a
-              key={index}
+              key={social.id}
               href={social.href}
               aria-label={social.label}
-              className="w-[24px] h-[32px] flex items-center justify-center hover:opacity-70 transition-opacity"
+              className="w-[24px] h-[32px] flex items-center justify-center transition-all"
               title={social.label}
+              onMouseEnter={() => setHoveredIcon(social.id)}
+              onMouseLeave={() => setHoveredIcon(null)}
             >
               <img 
-                src={social.icon} 
+                src={hoveredIcon === social.id ? social.hover : social.default}
                 alt={social.label}
-                className="w-[24px] h-auto object-contain"
+                className="w-[24px] h-auto object-contain transition-all"
               />
             </a>
           ))}
@@ -67,15 +79,7 @@ export default function Hero() {
           {/* CTA Button */}
           <button className="flex items-center gap-[8px] px-[11px] py-[11px] bg-white border border-[#595959] text-[#333] font-light text-[16px] font-['Nunito:ExtraLight',sans-serif] hover:bg-gray-50 transition-colors">
             <span>Say Hello!</span>
-            <svg 
-              className="w-[24px] h-[24px]" 
-              viewBox="0 0 24 24" 
-              fill="none" 
-              stroke="currentColor" 
-              strokeWidth="2"
-            >
-              <path d="M5 12h14M12 5l7 7-7 7"/>
-            </svg>
+            <img src={send} alt='send' className="w-[24px] h-[24px]" />
           </button>
         </div>
 
