@@ -1,44 +1,26 @@
+import rtk from "../assets/othericons/rtk.jpg"
+
 export const blogsData = [
   {
     id: 1,
-    title: "Why AI Safety Nepal?",
-    description: "Recently, I was a research fellow at AI Safety Saarland Interdisciplinary Research Incubator. Through that, I came across multiple reading groups",
-    image: "https://via.placeholder.com/285x190",
-    link: "#"
+    title: "Making Sense of Redux Toolkit",
+    description: "A frontend developer’s honest journey from prop drilling hell to global state bliss",
+    image: rtk,
+    link: "https://medium.com/p/dbb4559700bd?postPublishedType=initial"
   },
   {
     id: 2,
-    title: "From Idea to Impact",
-    description: "Notes & reflections from 3-Day Design Thinking and Systems Thinking sessions at Nabil School of Social Entrepreneurship Fellowship (June 1–3,",
-    image: "https://via.placeholder.com/285x190",
-    link: "#"
+    title: "Inside TechX 2024",
+    description: "Nobody checks your year of study at the door of a tech event. They just check if you're curious. Here's a recap of my experience volunteering at TechX 2024 and the amazing projects I got to see.",
+    image: "https://english.makalukhabar.com/wp-content/uploads/2024/08/TECH-x-2.jpeg",
+    link: "https://medium.com/@suyalsahukhala787/inside-techx-2024-c81050b3cf1f"
   },
   {
     id: 3,
-    title: "Learning in Public",
-    description: "Sharing my journey of learning machine learning concepts and building projects in public. Here's what I learned along the way.",
-    image: "https://via.placeholder.com/285x190",
+    title: "Falling Into The Self-Sabotage Loop",
+    description: "An honest letter to every developer who keeps switching paths before finishing anything",
+    image: "https://advesa.com/wp-content/uploads/2022/08/tech-stack.webp",
     link: "#"
   },
-  {
-    id: 4,
-    title: "Building Communities",
-    description: "How to build and sustain tech communities. Lessons learned from organizing meetups and workshops in Nepal.",
-    image: "https://via.placeholder.com/285x190",
-    link: "#"
-  },
-  {
-    id: 5,
-    title: "The Art of Technical Writing",
-    description: "Tips and tricks for writing clear, concise technical documentation and blog posts that engage your audience.",
-    image: "https://via.placeholder.com/285x190",
-    link: "#"
-  },
-  {
-    id: 6,
-    title: "Scaling Impact",
-    description: "How to scale your projects and initiatives beyond your immediate circle. Strategies for sustainable growth.",
-    image: "https://via.placeholder.com/285x190",
-    link: "#"
-  }
+
 ];

@@ -1,4 +1,6 @@
 import project1 from "../assets/othericons/project1.png"
+import project2 from "../assets/othericons/aqiapp.png"
+import project3 from "../assets/othericons/currencyconverter.png"
 
 export const projectsData = [
   {
@@ -12,56 +14,20 @@ export const projectsData = [
   },
   {
     id: 2,
-    name: "Major Project",
-    image: "https://via.placeholder.com/391x257",
-    link: "#"
+    name: "AQI Monitor & Weather Forecast App",
+    description: "A responsive, lightweight web application that displays real-time Air Quality Index data and weather forecasts for any location. Built entirely with vanilla JavaScript utilizing ES6 features and DOM manipulation — no frameworks, no dependencies. Demonstrates solid fundamentals in asynchronous API consumption and clean UI design.",
+    image: project2,
+    technologies:["Vanilla JavaScript", "HTML", "CSS","REST APIs"],
+    link: "https://thecoolersuy.github.io/AQI-monitor-App/",
+    featured: true
   },
   {
     id: 3,
-    name: "Niti",
-    image: "https://via.placeholder.com/391x257",
-    link: "#"
+    name: "Currency Converter App",
+    description: "A clean, responsive currency converter built with React that fetches live exchange rates for 160+ currencies. Architected with a custom React hook (useCurrencyInfo) to handle API calls and state management, a reusable Card component for the input/output UI, and a swap feature to instantly reverse conversion direction. Styled with Tailwind CSS and deployed to GitHub Pages via gh-pages.",
+    image: project3,
+    technologies: ["React", "Tailwind CSS", "ExchangeRate API", "Vite"],
+    link: "#",
+    featured: false
   },
-  {
-    id: 4,
-    name: "Fall Detection",
-    image: "https://via.placeholder.com/391x257",
-    link: "#"
-  },
-  {
-    id: 5,
-    name: "Newsly",
-    image: "https://via.placeholder.com/391x257",
-    link: "#"
-  },
-  {
-    id: 6,
-    name: "Sahayatri",
-    image: "https://via.placeholder.com/391x257",
-    link: "#"
-  },
-  {
-    id: 7,
-    name: "Maitrika",
-    image: "https://via.placeholder.com/391x257",
-    link: "#"
-  },
-  {
-    id: 8,
-    name: "Project 1",
-    image: "https://via.placeholder.com/391x257",
-    link: "#"
-  },
-  {
-    id: 9,
-    name: "Project 2",
-    image: "https://via.placeholder.com/391x257",
-    link: "#"
-  },
-  {
-    id: 10,
-    name: "Project 3",
-    image: "https://via.placeholder.com/391x257",
-    link: "#"
-  }
 ];

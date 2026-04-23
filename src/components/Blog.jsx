@@ -76,9 +76,14 @@ export default function Blog() {
                   </p>
                 </div>
 
-                <button className="font-body font-semibold mt-[16px] border border-[#595959] bg-white rounded px-[10px] py-[11px] text-[#333] text-[16px] font-light hover:bg-[#f0e9e6] hover:border-[#795547] hover:shadow-[3px_3px_0px_0px_#795547] transition-all text-center w-[100px]">
+                <a 
+                  href={blog.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-body font-semibold mt-[16px] border border-[#595959] bg-white  px-[10px] py-[11px] text-[#333] text-[16px] font-light hover:bg-[#f0e9e6] hover:border-[#795547] hover:shadow-[3px_3px_0px_0px_#795547] transition-all text-center w-[100px]"
+                >
                   <span>Read Blog</span>
-                </button>
+                </a>
               </div>
             </SwiperSlide>
           ))}
@@ -99,7 +104,7 @@ export default function Blog() {
         </button>
       </div>
       <div className="flex gap-[8px] justify-center mt-[20px] pt-[10px]">
-        {blogs.map((_, index) => (
+        {Array.from({ length: Math.max(0, blogs.length - 1) }).map((_, index) => (
           <button
             key={index}
             onClick={() => {
