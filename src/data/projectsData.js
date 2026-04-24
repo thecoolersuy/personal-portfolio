@@ -10,7 +10,8 @@ export const projectsData = [
     image: project1,
     link: "https://writr-omega.vercel.app/",    
     technologies: ["React", "Redux", "TinyMCE", "Appwrite", "TailwindCSS"],   
-    featured: true
+    featured: true,
+    button: "Try app"
   },
   {
     id: 2,
@@ -19,7 +20,8 @@ export const projectsData = [
     image: project2,
     technologies:["Vanilla JavaScript", "HTML", "CSS","REST APIs"],
     link: "https://thecoolersuy.github.io/AQI-monitor-App/",
-    featured: true
+    featured: true,
+    button: "Try app"
   },
   {
     id: 3,
@@ -27,7 +29,9 @@ export const projectsData = [
     description: "A clean, responsive currency converter built with React that fetches live exchange rates for 160+ currencies. Architected with a custom React hook (useCurrencyInfo) to handle API calls and state management, a reusable Card component for the input/output UI, and a swap feature to instantly reverse conversion direction. Styled with Tailwind CSS and deployed to GitHub Pages via gh-pages.",
     image: project3,
     technologies: ["React", "Tailwind CSS", "ExchangeRate API", "Vite"],
-    link: "#",
-    featured: false
+    link: "https://github.com/thecoolersuy/Currency-Converter-App.git",
+    featured: true,
+    button: "GitHub"
+
   },
 ];

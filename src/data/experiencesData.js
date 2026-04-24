@@ -1,6 +1,8 @@
 import writrlogo from "../assets/othericons/devlogo.png";
 import trailmate from "../assets/othericons/trailmate.png";
 import techxLogo from "../assets/othericons/techx.png";
+import khwopalogo from "../assets/othericons/khwopa.png";
+import animaxlogo from "../assets/othericons/animax.jpg"
 
 export const experiencesData = [
   {
@@ -45,7 +47,7 @@ export const experiencesData = [
     role: "Khwopa Higher Secondary School ",
     company: "Grade 11, 12 ",
     date: "2023 - 2024",
-    logo: "https://play-lh.googleusercontent.com/u-jC3EimI3zLIDueBY7FwTO4le7bA5iiEVPuYDV4hyOwzWnS4u4w50Z88bQj0vwHzxTE",
+    logo: khwopalogo,
     type: "Education"
   },
   {

@@ -21,13 +21,13 @@ export default function Hero() {
   const [hoveredIcon, setHoveredIcon] = useState(null);
 
   const socialLinks = [
-    { default: mailDefaultSvg, hover: mailHoverSvg, href: 'mailto:hello@example.com', label: 'Email', id: 'mail' },
-    { default: linkedinDefaultSvg, hover: linkedinHoverSvg, href: '#', label: 'LinkedIn', id: 'linkedin' },
-    { default: githubDefaultSvg, hover: githubHoverSvg, href: '#', label: 'GitHub', id: 'github' },
-    { default: twitterDefaultSvg, hover: twitterHoverSvg, href: '#', label: 'Twitter', id: 'twitter' },
-    { default: instagramDefaultSvg, hover: instagramHoverSvg, href: '#', label: 'Instagram', id: 'instagram' },
-    { default: mediumDefaultSvg, hover: mediumHoverSvg, href: '#', label: 'Medium', id: 'medium' },
-    { default: facebookDefaultSvg, hover: facebookHoverSvg, href: '#', label: 'Facebook', id: 'facebook' }
+    { default: mailDefaultSvg, hover: mailHoverSvg, href: '/#about', label: 'Email', id: 'mail' },
+    { default: linkedinDefaultSvg, hover: linkedinHoverSvg, href: 'https://www.linkedin.com/in/suyal-sahukhal-259a1b333/', label: 'LinkedIn', id: 'linkedin' , target:'_blank' },
+    { default: githubDefaultSvg, hover: githubHoverSvg, href: 'https://github.com/thecoolersuy', label: 'GitHub', id: 'github' , target:'_blank' },
+    { default: twitterDefaultSvg, hover: twitterHoverSvg, href: 'https://x.com/suyal_sahukhal', label: 'Twitter', id: 'twitter' , target:'_blank' },
+    { default: instagramDefaultSvg, hover: instagramHoverSvg, href: 'https://www.instagram.com/suyal_sahukhal/', label: 'Instagram', id: 'instagram' , target:'_blank' },
+    { default: mediumDefaultSvg, hover: mediumHoverSvg, href: 'https://medium.com/@suyalsahukhala787', label: 'Medium', id: 'medium' , target:'_blank' },
+    { default: facebookDefaultSvg, hover: facebookHoverSvg, href: 'https://www.facebook.com', label: 'Facebook', id: 'facebook' , target:'_blank' }
   ];
 
   return (
@@ -38,8 +38,10 @@ export default function Hero() {
             <a
               key={social.id}
               href={social.href}
+              target={social.target}
+              rel="noopener noreferrer"
               aria-label={social.label}
-              className="w-[24px] h-[32px] flex items-center justify-center transition-all"
+              className="w-[24px] h-[32px] flex items-center justify-center transition-all "
               title={social.label}
               onMouseEnter={() => setHoveredIcon(social.id)}
               onMouseLeave={() => setHoveredIcon(null)}
@@ -69,7 +71,7 @@ export default function Hero() {
             </p>
           </div>
           <button className="flex items-center gap-[8px] px-[11px] py-[11px] bg-white border border-[#595959] text-[#333] font-light text-[16px] font-['Nunito:ExtraLight',sans-serif] hover:bg-[#f0e9e6] hover:border-[#795547] hover:shadow-[3px_3px_0px_0px_#795547] transition-all">
-            <span className='font-body font-semibold'>Say Hello!</span>
+            <a href='https://www.linkedin.com/in/suyal-sahukhal-259a1b333/' target='_blank' rel='noopener noreferrer' className='font-body font-semibold'>Say Hello!</a>
             <img src={send} alt='send' className="w-[24px] h-[24px]" />
           </button>
         </div>

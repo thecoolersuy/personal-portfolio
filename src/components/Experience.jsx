@@ -3,7 +3,11 @@ import experienceRanjana from '../assets/ranjanalipiimages/experienceranjanalipi
 import educationIcon from '../assets/othericons/education.png';
 import experienceIcon from '../assets/othericons/rocket.png';
 import volunteeringIcon from '../assets/othericons/volunteering.png';
+import volunteeringIconClicked from '../assets/othericons/volunteeringicon-clicked.png';
+import volunteeringIconDefault from '../assets/othericons/volunteeringicon-default.png';
 import awardIcon from '../assets/othericons/award.png';
+import awardsIconClicked from '../assets/othericons/awardsicon-clicked.svg';
+import awardsIconDefault from '../assets/othericons/awardsicon-default.svg';
 import dropdownIcon from '../assets/othericons/dropdown.png';
 import { experiencesData } from '../data/experiencesData';
 
@@ -78,7 +82,7 @@ export default function Experience() {
               activeTab === "Volunteering" ? "active text-[#795547]" : "text-gray-500 hover:text-gray-700"
             }`}
           >
-            <img src={volunteeringIcon} alt="Volunteering" className="h-[21px] w-[20px] mb-2 object-contain" />
+            <img src={activeTab === "Volunteering" ? volunteeringIconClicked : volunteeringIconDefault} alt="Volunteering" className="h-[21px] w-[20px] mb-2 object-contain" />
             <span className="font-body font-semibold text-[16px] px-2 py-1">Volunteering</span>
           </button>
           <button
@@ -87,7 +91,7 @@ export default function Experience() {
               activeTab === "Award" ? "active text-[#795547]" : "text-gray-500 hover:text-gray-700"
             }`}
           >
-            <img src={awardIcon} alt="Award" className="h-[21px] w-[20px] mb-2 object-contain" />
+            <img src={activeTab === "Award" ? awardsIconClicked : awardsIconDefault} alt="Award" className="h-[21px] w-[20px] mb-2 object-contain" />
             <div className="flex flex-row items-center">
               <span className="font-body font-semibold text-[16px]">Award</span>
               <span className="text-[10px] mx-1">⬥</span>

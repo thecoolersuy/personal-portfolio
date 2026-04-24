@@ -12,11 +12,10 @@ export default function Footer() {
   ];
 
   const socialLinks = [
-    { icon: linkedinSvg, label: 'LinkedIn', href: 'https://linkedin.com' },
-    { icon: githubSvg, label: 'GitHub', href: 'https://github.com' },
-    { icon: twitterSvg, label: 'Twitter', href: 'https://twitter.com' },
-    { icon: mailSvg, label: 'Email', href: 'mailto:hello@example.com' },
-    { icon: instagramSvg, label: 'Instagram', href: 'https://instagram.com' }
+    { icon: linkedinSvg, label: 'LinkedIn', href: 'https://www.linkedin.com/in/suyal-sahukhal-259a1b333/' },
+    { icon: githubSvg, label: 'GitHub', href: 'https://github.com/thecoolersuy' },
+    { icon: twitterSvg, label: 'Twitter', href: 'https://x.com/suyal_sahukhal' },
+    { icon: instagramSvg, label: 'Instagram', href: 'https://instagram.com/suyal_sahukhal' }
   ];
 
   return (
@@ -25,6 +24,7 @@ export default function Footer() {
         <nav className="flex gap-[24px] justify-center flex-wrap">
           {navigationLinks.map((link) => (
             <a
+
               key={link.label}
               href={link.href}
               className="font-light text-[#595959] text-[16px] hover:text-[#333] transition-colors"
@@ -38,6 +38,7 @@ export default function Footer() {
             <a
               key={index}
               href={social.href}
+              {...(social.label !== 'Email' && { target: '_blank', rel: 'noopener noreferrer' })}
               aria-label={social.label}
               className="border border-[#1a1a1a] rounded-[6px] w-[40px] h-[39px] flex items-center justify-center hover:bg-[#1a1a1a] transition-all group"
               title={social.label}
