@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
@@ -11,11 +11,21 @@ import { blogsData } from '../data/blogsData';
 
 export default function Blog() {
   const [activeIndex, setActiveIndex] = useState(0);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
   const prevRef = useRef(null);
   const nextRef = useRef(null);
   const swiperRef = useRef(null);
 
   const blogs = blogsData;
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   return (
     <section id="blog" className="flex flex-col items-center pb-[32px] pt-[96px] w-full relative">
@@ -91,20 +101,20 @@ export default function Blog() {
         <button
           ref={prevRef}
           onClick={() => swiperRef.current?.swiper.slidePrev()}
-          className="absolute left-[320px] bg-[rgba(236,234,248,0.5)] hover:bg-[rgba(236,234,248,0.7)] rounded-[10px] w-[50px] h-[50px] flex items-center justify-center text-[#795547] text-[22px] font-normal transition-colors top-1/2 -translate-y-1/2 z-10"
+          className="absolute left-4 md:left-[320px] bg-[rgba(236,234,248,0.5)] hover:bg-[rgba(236,234,248,0.7)] rounded-[10px] w-[50px] h-[50px] flex items-center justify-center text-[#795547] text-[22px] font-normal transition-colors top-1/2 -translate-y-1/2 z-10"
         >
           <img src={leftarrow} alt="previous" />
         </button>
         <button
           ref={nextRef}
           onClick={() => swiperRef.current?.swiper.slideNext()}
-          className="absolute right-[330px] bg-[rgba(236,234,248,0.5)] hover:bg-[rgba(236,234,248,0.7)] rounded-[10px] w-[50px] h-[50px] flex items-center justify-center text-[#795547] text-[22px] font-normal transition-colors top-1/2 -translate-y-1/2 z-10"
+          className="absolute right-4 md:right-[330px] bg-[rgba(236,234,248,0.5)] hover:bg-[rgba(236,234,248,0.7)] rounded-[10px] w-[50px] h-[50px] flex items-center justify-center text-[#795547] text-[22px] font-normal transition-colors top-1/2 -translate-y-1/2 z-10"
         >
           <img src={rightarrow} alt="next" />
         </button>
       </div>
       <div className="flex gap-[8px] justify-center mt-[20px] pt-[10px]">
-        {Array.from({ length: Math.max(0, blogs.length - 1) }).map((_, index) => (
+        {Array.from({ length: isMobile ? blogs.length : Math.max(0, blogs.length - 1) }).map((_, index) => (
           <button
             key={index}
             onClick={() => {

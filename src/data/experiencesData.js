@@ -3,12 +3,20 @@ import trailmate from "../assets/othericons/trailmate.png";
 import techxLogo from "../assets/othericons/techx.png";
 import khwopalogo from "../assets/othericons/khwopa.png";
 import animaxlogo from "../assets/othericons/animax.jpg"
+import company1 from "../assets/othericons/webbingplex.png";
 
 export const experiencesData = [
+    {
+    role: "Frontend Developer Intern",
+    company: "Webbing Plex",
+    date: "Apr 2026 - Present",
+    logo: company1,
+    type: "Experience",
+  },
   {
     role: "Scrum Master",
     company: "College Project - Trailmate",
-    date: "Jan 2026 - Present",
+    date: "Jan 2026",
     logo: trailmate,
     type: "Experience",
     description: [
@@ -20,7 +28,7 @@ export const experiencesData = [
   {
     role: "Frontend",
     company: "Writr - Personal Project",
-    date: "Nov 2025 - Present",
+    date: "Nov 2025",
     logo: writrlogo,
     type: "Experience",
     description: [

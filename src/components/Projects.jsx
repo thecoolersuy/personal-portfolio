@@ -99,14 +99,14 @@ export default function Projects() {
         <button
           ref={prevRef}
           onClick={() => swiperRef.current?.swiper.slidePrev()}
-          className="absolute left-[362px] bg-[rgba(236,234,248,0.5)] hover:bg-[rgba(236,234,248,0.7)] rounded-[10px] w-[50px] h-[50px] flex items-center justify-center text-[#795547] text-[22px] font-normal transition-colors top-1/2 -translate-y-1/2 z-10"
+          className="absolute left-4 md:left-[362px] bg-[rgba(236,234,248,0.5)] hover:bg-[rgba(236,234,248,0.7)] rounded-[10px] w-[50px] h-[50px] flex items-center justify-center text-[#795547] text-[22px] font-normal transition-colors top-1/2 -translate-y-1/2 z-10"
         >
           <img src={leftarrow} alt="Previous" />
         </button>
         <button
           ref={nextRef}
           onClick={() => swiperRef.current?.swiper.slideNext()}
-          className="absolute right-[362px] bg-[rgba(236,234,248,0.5)] hover:bg-[rgba(236,234,248,0.7)] rounded-[10px] w-[50px] h-[50px] flex items-center justify-center text-[#795547] text-[22px] font-normal transition-colors top-1/2 -translate-y-1/2 z-10"
+          className="absolute right-4 md:right-[362px] bg-[rgba(236,234,248,0.5)] hover:bg-[rgba(236,234,248,0.7)] rounded-[10px] w-[50px] h-[50px] flex items-center justify-center text-[#795547] text-[22px] font-normal transition-colors top-1/2 -translate-y-1/2 z-10"
         >
           <img src={rightarrow} alt="Next" />
         </button>

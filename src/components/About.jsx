@@ -28,11 +28,11 @@ export default function About() {
             />
           </div>
           <div className="flex flex-col gap-6 font-body font-medium text-[16px] text-secondary leading-relaxed bg-surface rounded-[30px] p-2 md:p-6 relative">
-            <p className="m-0 text-left">
+            <p className="m-0 text-center md:text-left lg:text-left ">
               I’m a Frontend Developer passionate about crafting clean, interactive, and user-centered web experiences. I'm currently building a dev blog application <a href="#" className="text-accent hover:underline transition-all">Writr</a>. I am pursuing my BSc(Hons) in Computing from Softwarica College of IT and e-Commerce, Coventry University. I enjoy building frontend solutions, exploring modern frontend concepts, and experimenting with ideas around UI, performance, and developer experience.
             </p>
 
-            <p className="m-0 text-left">
+            <p className="m-0 text-center md:text-left lg:text-left">
              When I’m not glued to a screen (rare, but it happens), I’m probably hiking, exploring design ideas, or out on a long walk.
 
             </p>
