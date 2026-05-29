@@ -1,39 +1,89 @@
-import React, { useState } from 'react';
-import linkedinDefaultSvg from '../assets/socialmediaicons/linkedin-default.svg';
-import linkedinHoverSvg from '../assets/socialmediaicons/linkedin-hover.svg';
-import githubDefaultSvg from '../assets/socialmediaicons/github-default.svg';
-import githubHoverSvg from '../assets/socialmediaicons/github-hover.svg';
-import twitterDefaultSvg from '../assets/socialmediaicons/twitter-default.svg';
-import twitterHoverSvg from '../assets/socialmediaicons/twitter-hover.svg';
-import mediumDefaultSvg from '../assets/socialmediaicons/medium-default.svg';
-import mediumHoverSvg from '../assets/socialmediaicons/medium-hover.svg';
-import instagramDefaultSvg from '../assets/socialmediaicons/instagram-default.svg';
-import instagramHoverSvg from '../assets/socialmediaicons/instagram-hover.svg';
-import facebookDefaultSvg from '../assets/socialmediaicons/facebook-default.svg';
-import facebookHoverSvg from '../assets/socialmediaicons/facebook-hover.svg';
-import mailDefaultSvg from '../assets/socialmediaicons/mail-default.svg';
-import mailHoverSvg from '../assets/socialmediaicons/mail-hover.svg';
-import wave from '../assets/othericons/wave.png';
-import picture from "../assets/othericons/hero.jpeg"
-import send from "../assets/othericons/delivery.png"
+import React, { useState } from "react";
+import linkedinDefaultSvg from "../assets/socialmediaicons/linkedin-default.svg";
+import linkedinHoverSvg from "../assets/socialmediaicons/linkedin-hover.svg";
+import githubDefaultSvg from "../assets/socialmediaicons/github-default.svg";
+import githubHoverSvg from "../assets/socialmediaicons/github-hover.svg";
+import twitterDefaultSvg from "../assets/socialmediaicons/twitter-default.svg";
+import twitterHoverSvg from "../assets/socialmediaicons/twitter-hover.svg";
+import mediumDefaultSvg from "../assets/socialmediaicons/medium-default.svg";
+import mediumHoverSvg from "../assets/socialmediaicons/medium-hover.svg";
+import instagramDefaultSvg from "../assets/socialmediaicons/instagram-default.svg";
+import instagramHoverSvg from "../assets/socialmediaicons/instagram-hover.svg";
+import facebookDefaultSvg from "../assets/socialmediaicons/facebook-default.svg";
+import facebookHoverSvg from "../assets/socialmediaicons/facebook-hover.svg";
+import mailDefaultSvg from "../assets/socialmediaicons/mail-default.svg";
+import mailHoverSvg from "../assets/socialmediaicons/mail-hover.svg";
+import wave from "../assets/othericons/wave.png";
+import picture from "../assets/othericons/hero.jpeg";
+import send from "../assets/othericons/delivery.png";
 
 export default function Hero() {
   const [hoveredIcon, setHoveredIcon] = useState(null);
 
   const socialLinks = [
-    { default: mailDefaultSvg, hover: mailHoverSvg, href: '/#about', label: 'Email', id: 'mail' },
-    { default: linkedinDefaultSvg, hover: linkedinHoverSvg, href: 'https://www.linkedin.com/in/suyal-sahukhal-259a1b333/', label: 'LinkedIn', id: 'linkedin' , target:'_blank' },
-    { default: githubDefaultSvg, hover: githubHoverSvg, href: 'https://github.com/thecoolersuy', label: 'GitHub', id: 'github' , target:'_blank' },
-    { default: twitterDefaultSvg, hover: twitterHoverSvg, href: 'https://x.com/suyal_sahukhal', label: 'Twitter', id: 'twitter' , target:'_blank' },
-    { default: instagramDefaultSvg, hover: instagramHoverSvg, href: 'https://www.instagram.com/suyal_sahukhal/', label: 'Instagram', id: 'instagram' , target:'_blank' },
-    { default: mediumDefaultSvg, hover: mediumHoverSvg, href: 'https://medium.com/@suyalsahukhala787', label: 'Medium', id: 'medium' , target:'_blank' },
-    { default: facebookDefaultSvg, hover: facebookHoverSvg, href: 'https://www.facebook.com', label: 'Facebook', id: 'facebook' , target:'_blank' }
+    {
+      default: mailDefaultSvg,
+      hover: mailHoverSvg,
+      href: "/#about",
+      label: "Email",
+      id: "mail",
+    },
+    {
+      default: linkedinDefaultSvg,
+      hover: linkedinHoverSvg,
+      href: "https://www.linkedin.com/in/suyal-sahukhal-259a1b333/",
+      label: "LinkedIn",
+      id: "linkedin",
+      target: "_blank",
+    },
+    {
+      default: githubDefaultSvg,
+      hover: githubHoverSvg,
+      href: "https://github.com/thecoolersuy",
+      label: "GitHub",
+      id: "github",
+      target: "_blank",
+    },
+    {
+      default: twitterDefaultSvg,
+      hover: twitterHoverSvg,
+      href: "https://x.com/suyal_sahukhal",
+      label: "Twitter",
+      id: "twitter",
+      target: "_blank",
+    },
+    {
+      default: instagramDefaultSvg,
+      hover: instagramHoverSvg,
+      href: "https://www.instagram.com/suyal_sahukhal/",
+      label: "Instagram",
+      id: "instagram",
+      target: "_blank",
+    },
+    {
+      default: mediumDefaultSvg,
+      hover: mediumHoverSvg,
+      href: "https://medium.com/@suyalsahukhala787",
+      label: "Medium",
+      id: "medium",
+      target: "_blank",
+    },
+    {
+      default: facebookDefaultSvg,
+      hover: facebookHoverSvg,
+      href: "https://www.facebook.com",
+      label: "Facebook",
+      id: "facebook",
+      target: "_blank",
+    },
   ];
 
   return (
-    <section id="hero" className="w-full min-h-screen bg-surface flex items-center justify-center pt-[32px] md:pt-[96px] pb-[48px] md:pb-[174px] px-4">
+    <section
+      id="hero"
+      className="w-full min-h-screen bg-surface flex items-center justify-center pt-[32px] md:pt-[96px] pb-[48px] md:pb-[174px] px-4"
+    >
       <div className="max-w-[968px] w-full grid grid-cols-[50px_minmax(0,1fr)] md:grid-cols-[120px_auto_auto] gap-[30px] md:gap-[8px] items-start md:items-center">
-        
         {/* Social Links - Vertical on both mobile and desktop */}
         <div className="flex flex-col gap-[18px] md:gap-[15px] items-end md:items-end justify-start md:justify-center pr-[17px] md:pr-[87px]">
           {socialLinks.map((social) => (
@@ -48,7 +98,7 @@ export default function Hero() {
               onMouseEnter={() => setHoveredIcon(social.id)}
               onMouseLeave={() => setHoveredIcon(null)}
             >
-              <img 
+              <img
                 src={hoveredIcon === social.id ? social.hover : social.default}
                 alt={social.label}
                 className="w-[24px] h-auto object-contain transition-all"
@@ -66,7 +116,11 @@ export default function Hero() {
             <h1 className="font-heading font-bold text-[35px] md:text-[44.8px] text-[#333] leading-tight md:leading-[55px] whitespace-nowrap">
               Suyal
             </h1>
-            <img src={wave} alt="wave" className="w-[30px] md:w-[35px] h-[30px] md:h-[35px]" />
+            <img
+              src={wave}
+              alt="wave"
+              className="w-[30px] md:w-[35px] h-[30px] md:h-[35px]"
+            />
           </div>
           <div className="flex items-center w-full pb-[22px] relative">
             <div className="absolute left-0 top-[12.8px] w-[42px] h-px bg-[#595959]" />
@@ -75,8 +129,15 @@ export default function Hero() {
             </p>
           </div>
           <button className="flex items-center gap-[8px] px-[11px] py-[11px] bg-white border border-[#595959] text-[#333] font-light text-[16px] font-['Nunito:ExtraLight',sans-serif] hover:bg-[#f0e9e6] hover:border-[#795547] hover:shadow-[3px_3px_0px_0px_#795547] transition-all">
-            <a href='https://www.linkedin.com/in/suyal-sahukhal-259a1b333/' target='_blank' rel='noopener noreferrer' className='font-body font-semibold'>Say Hello!</a>
-            <img src={send} alt='send' className="w-[25px] h-[25px]" />
+            <a
+              href="https://www.linkedin.com/in/suyal-sahukhal-259a1b333/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-body font-semibold"
+            >
+              Say Hello!
+            </a>
+            <img src={send} alt="send" className="w-[25px] h-[25px]" />
           </button>
         </div>
 
@@ -92,7 +153,6 @@ export default function Hero() {
             </div>
           </div>
         </div>
-
       </div>
     </section>
   );
