@@ -75,11 +75,11 @@ export const experiencesData = [
       "Engaged with tech enthusiasts and provided information about the projects on display",
     ],
   },
-  //   {
-  //     role: "Nabil School of Social Entrepreneurship Fellow",
-  //     company: "Nabil Bank, TU School of Management",
-  //     date: "2023 - 2024",
-  //     logo: "https://via.placeholder.com/35",
-  //     type: "Award"
-  //   },
+  {
+    role: "Merit-Based Scholarship",
+    company: "Softwarica College of IT & E-Commerce",
+    date: "2025",
+    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXJnP1hKSwmUpsfv1pMQaDEKUbD1gtQQrMpw&s",
+    type: "Award",
+  },
 ];
