@@ -13,7 +13,6 @@ import facebookDefaultSvg from "../assets/socialmediaicons/facebook-default.svg"
 import facebookHoverSvg from "../assets/socialmediaicons/facebook-hover.svg";
 import mailDefaultSvg from "../assets/socialmediaicons/mail-default.svg";
 import mailHoverSvg from "../assets/socialmediaicons/mail-hover.svg";
-import wave from "../assets/othericons/wave.png";
 import picture from "../assets/othericons/hero.jpeg";
 import send from "../assets/othericons/delivery.png";
 
@@ -109,24 +108,18 @@ export default function Hero() {
 
         {/* Main Content */}
         <div className="flex flex-col gap-[4px] items-start col-span-1 md:col-span-">
-          <div className="h-auto md:h-[55px] w-full flex flex-row items-center md:items-center gap-[6px] md:gap-[10px] justify-start md:justify-start flex-nowrap">
-            <h1 className="font-heading font-bold text-[35px] md:text-[44.8px] text-[#333] leading-tight md:leading-[55px] whitespace-nowrap">
-              Hi, I'm
-            </h1>
-            <h1 className="font-heading font-bold text-[35px] md:text-[44.8px] text-[#333] leading-tight md:leading-[55px] whitespace-nowrap">
-              Suyal
-            </h1>
+          <div className="relative w-full pb-[22px] group">
             <img
-              src={wave}
-              alt="wave"
-              className="w-[30px] md:w-[35px] h-[30px] md:h-[35px]"
+              src="/id-removebg-preview.png"
+              alt="ID"
+              className="w-[220px] md:w-[320px] h-auto -rotate-6 origin-left"
             />
-          </div>
-          <div className="flex items-center w-full pb-[22px] relative">
-            <div className="absolute left-0 top-[12.8px] w-[42px] h-px bg-[#595959]" />
-            <p className="font-body font-medium text-[20px] md:text-[20px] text-[#595959] font-extralight pl-[60px]">
-              frontend developer
-            </p>
+            <div className="absolute left-[180px] md:left-[250px] top-1/2 -translate-y-1/2 z-20 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 pointer-events-none">
+              <div className="relative bg-[#4d5057] text-white text-[12px] md:text-[14px] leading-snug px-4 py-3 rounded-[12px] max-w-[220px] md:max-w-[300px] shadow-lg">
+                hobby: surprising my repo with a 2a.m project
+                <span className="absolute -left-[6px] top-1/2 -translate-y-1/2 w-[12px] h-[12px] bg-[#4d5057] rotate-45" />
+              </div>
+            </div>
           </div>
           <button className="flex items-center gap-[8px] px-[11px] py-[11px] bg-white border border-[#595959] text-[#333] font-light text-[16px] font-['Nunito:ExtraLight',sans-serif] hover:bg-[#f0e9e6] hover:border-[#795547] hover:shadow-[3px_3px_0px_0px_#795547] transition-all">
             <a
