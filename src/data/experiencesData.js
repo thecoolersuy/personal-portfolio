@@ -9,7 +9,7 @@ export const experiencesData = [
   {
     role: "Frontend Developer Intern",
     company: "Webbing Plex",
-    date: "Apr 2026 - Present",
+    date: "Feb 2026 - May 2026",
     logo: company1,
     type: "Experience",
     description: [

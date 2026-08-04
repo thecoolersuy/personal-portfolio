@@ -15,6 +15,7 @@ import mailDefaultSvg from "../assets/socialmediaicons/mail-default.svg";
 import mailHoverSvg from "../assets/socialmediaicons/mail-hover.svg";
 import picture from "../assets/othericons/hero.jpeg";
 import send from "../assets/othericons/delivery.png";
+import idtagtwo from "/idtagtwo.png";
 
 export default function Hero() {
   const [hoveredIcon, setHoveredIcon] = useState(null);
@@ -110,13 +111,13 @@ export default function Hero() {
         <div className="flex flex-col gap-[4px] items-start col-span-1 md:col-span-">
           <div className="relative w-full pb-[22px] group">
             <img
-              src="/id-removebg-preview.png"
+              src="/idtagtwo.png"
               alt="ID"
               className="w-[220px] md:w-[320px] h-auto -rotate-6 origin-left"
             />
             <div className="absolute left-[180px] md:left-[250px] top-1/2 -translate-y-1/2 z-20 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 pointer-events-none">
               <div className="relative bg-[#4d5057] text-white text-[12px] md:text-[14px] leading-snug px-4 py-3 rounded-[12px] max-w-[220px] md:max-w-[300px] shadow-lg">
-                hobby: surprising my repo with a 2a.m project
+                Hobby: Surprising my GitHub repository with a 2:00 AM commit.
                 <span className="absolute -left-[6px] top-1/2 -translate-y-1/2 w-[12px] h-[12px] bg-[#4d5057] rotate-45" />
               </div>
             </div>
