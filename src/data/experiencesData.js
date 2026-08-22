@@ -7,7 +7,7 @@ import company1 from "../assets/othericons/webbingplex.png";
 
 export const experiencesData = [
   {
-    role: "Frontend Developer Intern",
+    role: "Software Engineer Intern",
     company: "Webbing Plex",
     date: "Feb 2026 - May 2026",
     logo: company1,
