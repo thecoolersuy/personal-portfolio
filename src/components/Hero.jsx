@@ -115,12 +115,6 @@ export default function Hero() {
               alt="ID"
               className="w-[220px] md:w-[320px] h-auto -rotate-6 origin-left"
             />
-            <div className="absolute left-[180px] md:left-[250px] top-1/2 -translate-y-1/2 z-20 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 pointer-events-none">
-              <div className="relative bg-[#4d5057] text-white text-[12px] md:text-[14px] leading-snug px-4 py-3 rounded-[12px] max-w-[220px] md:max-w-[300px] shadow-lg">
-                Hobby: Surprising my GitHub repository with a 2:00 AM commit.
-                <span className="absolute -left-[6px] top-1/2 -translate-y-1/2 w-[12px] h-[12px] bg-[#4d5057] rotate-45" />
-              </div>
-            </div>
           </div>
           <button className="flex items-center gap-[8px] px-[11px] py-[11px] bg-white border border-[#595959] text-[#333] font-light text-[16px] font-['Nunito:ExtraLight',sans-serif] hover:bg-[#f0e9e6] hover:border-[#795547] hover:shadow-[3px_3px_0px_0px_#795547] transition-all">
             <a
