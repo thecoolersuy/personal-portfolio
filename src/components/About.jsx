@@ -27,14 +27,15 @@ export default function About() {
             <img
               src={birdGif}
               alt="bird animation"
-              className="w-[240px] h-[240px] object-contain"
+              className="w-[400px] h-[400px] object-contain"
             />
           </div>
           <div className="flex flex-col gap-6 font-body font-medium text-[16px] text-secondary leading-relaxed bg-surface rounded-[30px] p-2 md:p-6 relative">
             <p className="m-0 text-center md:text-left lg:text-left ">
-              I’m a .NET and React Developer passionate about building clean,
-              secure, and high-performance web applications from front to back.
-              I'm currently building a browser-based POS application{" "}
+              I’m a .NET and React Developer passionate about building reliable
+              backend systems with clean, secure, and high-performance web
+              applications from front to back. I'm currently building a
+              browser-based POS application{" "}
               <a
                 href="#"
                 className="text-accent hover:underline transition-all"

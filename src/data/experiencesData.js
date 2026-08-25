@@ -76,10 +76,30 @@ export const experiencesData = [
     ],
   },
   {
-    role: "Merit-Based Scholarship",
-    company: "Softwarica College of IT & E-Commerce",
-    date: "2025",
-    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXJnP1hKSwmUpsfv1pMQaDEKUbD1gtQQrMpw&s",
+    role: "DataForGood Nepal 2026 Hackathon",
+    company: "Institute of Analytics (IoA)",
+    date: "2026",
+    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxAhX0o9DvNKG3lpzZRwCOj0QtGWu9EUXoyQIwLJ4i4CvCNjgPW-qwTgP1&s=10",
     type: "Award",
+    credentialLink:
+      "https://drive.google.com/file/d/1Jay5WhACRDi1L-rN2298rUK1wCHvmoJU/view?usp=sharing",
+  },
+  {
+    role: "Intermediate SQL",
+    company: "DataCamp",
+    date: "Issued Jul 2026",
+    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH5ZZyHwBrFdGG3H-FjaJXJZy_CR_uGgzbsSe0KUZwU4kQBA9OskjSA4a5&s=10",
+    type: "Award",
+    credentialLink:
+      "https://www.datacamp.com/completed/statement-of-accomplishment/course/0d0961ffd9aedfb7482b6024bc2c4dc0f06aa474",
+  },
+  {
+    role: "Joining Data in SQL",
+    company: "DataCamp",
+    date: "Issued Aug 2026",
+    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH5ZZyHwBrFdGG3H-FjaJXJZy_CR_uGgzbsSe0KUZwU4kQBA9OskjSA4a5&s=10",
+    type: "Award",
+    credentialLink:
+      "https://www.datacamp.com/completed/statement-of-accomplishment/course/5400ad46eaf954d1e751d6b1af7ae5955d3b7141",
   },
 ];
