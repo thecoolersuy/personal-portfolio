@@ -7,7 +7,7 @@ import "swiper/css/pagination";
 import leftarrow from "../assets/othericons/left.png";
 import rightarrow from "../assets/othericons/right.png";
 import projectsRanjana from "../assets/ranjanalipiimages/projectsranjanalipi.png";
-import send from "../assets/othericons/delivery.png";
+import send from "../assets/othericons/linkopen.svg";
 import { projectsData } from "../data/projectsData";
 
 export default function Projects() {
@@ -21,7 +21,7 @@ export default function Projects() {
   const renderDescription = (description) => {
     if (Array.isArray(description)) {
       return (
-        <ul className="list-disc pl-5 font-light text-[#333333] text-[17.6px] leading-normal space-y-1">
+        <ul className="list-disc pl-5 font-light text-[#7b85a2] text-[17.6px] leading-normal space-y-1">
           {description.map((item, index) => (
             <li key={index}>{item}</li>
           ))}
@@ -39,7 +39,7 @@ export default function Projects() {
 
       if (bulletItems.length > 0) {
         return (
-          <ul className="list-disc pl-5 font-light text-[#333333] text-[17.6px] leading-normal space-y-1">
+          <ul className="list-disc pl-5 font-light text-[#7b85a2] text-[17.6px] leading-normal space-y-1">
             {bulletItems.map((item, index) => (
               <li key={index}>{item}</li>
             ))}
@@ -60,22 +60,19 @@ export default function Projects() {
     if (Array.isArray(button) && Array.isArray(link)) {
       return (
         <ul className="flex gap-3 flex-wrap">
-          {button.map(
-            (button, index) =>
-              (
-                <li key={index} className="mt-[12px]">
-                  <a
-                    href={link[index]}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-fit border border-[#595959] bg-white  px-[11px] py-[11px] flex items-center gap-[8px] text-[#333] text-[16px] font-light hover:bg-[#f0e9e6] hover:border-[#795547] hover:shadow-[3px_3px_0px_0px_#795547] transition-all no-underline"
-                  >
-                    <span className="font-body font-semibold">{button}</span>
-                    <img src={send} alt="send" className="w-[24px] h-[24px]" />
-                  </a>
-                </li>
-              ) 
-          )}
+          {button.map((button, index) => (
+            <li key={index} className="mt-[12px]">
+              <a
+                href={link[index]}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-fit border border-[#0a192f] bg-[#ccd6f6]  px-[11px] py-[11px] flex items-center gap-[8px] text-[#0a192f] text-[16px] font-light  hover:border-[#0a192f] hover:shadow-[5px_5px_0px_0px_#0a192f] transition-all no-underline"
+              >
+                <span className="font-body font-semibold">{button}</span>
+                <img src={send} alt="send" className="w-[24px] h-[24px]" />
+              </a>
+            </li>
+          ))}
         </ul>
       );
     }
@@ -87,7 +84,7 @@ export default function Projects() {
       className="flex flex-col items-center pb-[32px] pt-[96px] w-full relative"
     >
       <div className="flex flex-col items-center w-full">
-        <h2 className="font-heading font-bold text-[#444] text-[41.6px] text-center ">
+        <h2 className="font-heading font-bold text-[#ccd6f6] text-[41.6px] text-center ">
           projects
         </h2>
         <div className="mt-2 flex items-center justify-center">
@@ -103,7 +100,7 @@ export default function Projects() {
         <Swiper
           ref={swiperRef}
           modules={[Navigation, Pagination]}
-          spaceBetween={0}
+          spaceBetween={24}
           slidesPerView={1}
           onBeforeInit={(swiper) => {
             swiper.params.navigation.prevEl = prevRef.current;
@@ -118,8 +115,8 @@ export default function Projects() {
         >
           {projects.map((project) => (
             <SwiperSlide key={project.id} className="flex justify-center">
-              <div className="w-full bg-white rounded-[3px] p-[25px] flex flex-col gap-[15px]">
-                <div className="h-[360px] w-full bg-gray-100 rounded overflow-hidden flex items-center justify-center">
+              <div className="w-full bg-[#112240] rounded-[3px] p-[25px] flex flex-col gap-[15px] ">
+                <div className="h-[360px] w-full  rounded overflow-hidden flex items-center justify-center">
                   <img
                     src={project.image}
                     alt={project.name}
@@ -128,7 +125,7 @@ export default function Projects() {
                 </div>
 
                 <div className="flex flex-col gap-3">
-                  <h3 className="font-body font-semibold text-[#333333] text-[24px] mb-[4px]">
+                  <h3 className="font-body font-semibold text-[#ccd6f6] text-[24px] mb-[4px]">
                     {project.name}
                   </h3>
                   {project.technologies && (
@@ -136,7 +133,7 @@ export default function Projects() {
                       {project.technologies.map((tech, index) => (
                         <span
                           key={index}
-                          className="bg-[#f0e9e6] px-[6px] py-[5px] rounded-[2px] text-[14px] font-light text-[#1a1a1a] shadow-[1px_1px_1px_0px_#795547]"
+                          className="bg-[#ccd6f6] px-[6px] py-[5px] rounded-[2px] text-[14px] font-light text-[#0a192f] "
                         >
                           {tech}
                         </span>

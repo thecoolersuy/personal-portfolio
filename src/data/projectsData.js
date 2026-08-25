@@ -1,15 +1,16 @@
 import project1 from "../assets/othericons/project1.png";
 import project2 from "../assets/othericons/aqiapp.png";
 import project0 from "../assets/othericons/project0.png";
-import project4 from "../../public/dotnet.webp";
+import project4 from "../../public/dotnetweb.png";
 
 export const projectsData = [
   {
     id: 1,
     name: " E-Commerce API",
-    description: ` • Architected a layered REST API following Clean Architecture principles, separating Controllers, Repository interfaces, and EF Core-backed data access to keep business logic fully decoupled from the database implementation\n
-       • Implemented dependency injection throughout the application, registering services with appropriate lifetimes (Scoped/Singleton) and enabling the entire data layer to be swapped from an in-memory store to a real SQLite database with zero changes to controller code \n \n
-       • Engineered a secure, asynchronous CRUD API featuring DTO data-shaping, JWT authentication, and centralized error handling, specifically designed to solve over-posting vulnerabilities and untrusted database dependencies through isolated xUnit testing. `,
+    description: ` • Architected a Clean Architecture REST API that completely decouples business logic from database implementations\n
+       • Implemented dependency injection to seamlessly swap in-memory storage for SQLite with zero controller code changes \n
+       • Built secure asynchronous CRUD endpoints featuring JWT authentication and DTO data-shaping to prevent over-posting vulnerabilities \n
+       • Developed centralized error handling and isolated xUnit testing to eliminate untrusted database dependencies`,
     image: project4,
     link: ["https://github.com/thecoolersuy/aspnetcore-webapi-sandbox.git"],
     technologies: [

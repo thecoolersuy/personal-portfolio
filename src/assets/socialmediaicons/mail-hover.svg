@@ -1,7 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="96" height="96" id="Mail">
-  <switch>
-    <g fill="#795547" class="color000000 svgShape">
-      <path d="M80 12H16C9.373 12 4 17.373 4 24v48c0 6.627 5.373 12 12 12h64c6.627 0 12-5.373 12-12V24c0-6.627-5.373-12-12-12zm0 8c.462 0 .906.078 1.318.223L48 46.878 14.682 20.223A3.964 3.964 0 0 1 16 20h64zm0 56H16a4 4 0 0 1-4-4V28.322l33.501 26.801c.73.585 1.614.877 2.499.877s1.769-.292 2.499-.877L84 28.322V72a4 4 0 0 1-4 4z" fill="#795547" class="color000000 svgShape"></path>
-    </g>
-  </switch>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path fill="#64ffda" d="M112 128C85.5 128 64 149.5 64 176C64 191.1 71.1 205.3 83.2 214.4L291.2 370.4C308.3 383.2 331.7 383.2 348.8 370.4L556.8 214.4C568.9 205.3 576 191.1 576 176C576 149.5 554.5 128 528 128L112 128zM64 260L64 448C64 483.3 92.7 512 128 512L512 512C547.3 512 576 483.3 576 448L576 260L377.6 408.8C343.5 434.4 296.5 434.4 262.4 408.8L64 260z"/></svg>

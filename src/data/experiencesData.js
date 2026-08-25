@@ -1,8 +1,5 @@
-import writrlogo from "../assets/othericons/devlogo.png";
-import trailmate from "../assets/othericons/trailmate.png";
+
 import techxLogo from "../assets/othericons/techx.png";
-import khwopalogo from "../assets/othericons/khwopa.png";
-import animaxlogo from "../assets/othericons/animax.jpg";
 import company1 from "../assets/othericons/webbingplex.png";
 
 export const experiencesData = [
@@ -20,37 +17,6 @@ export const experiencesData = [
     ],
   },
   {
-    role: "Scrum Master",
-    company: "College Project - Trailmate",
-    date: "Jan 2026",
-    logo: trailmate,
-    type: "Experience",
-    description: [
-      "Facilitated daily standup meetings and sprint planning sessions",
-      "Managed project backlog and prioritized features with stakeholders",
-      "Resolved blockers and ensured smooth team collaboration",
-    ],
-  },
-  {
-    role: "Frontend",
-    company: "Writr - Personal Project",
-    date: "Nov 2025",
-    logo: writrlogo,
-    type: "Experience",
-    description: [
-      "Built a full-featured blogging platform with modern React architecture",
-      "Implemented responsive UI design with Tailwind CSS",
-      "Integrated markdown editor and user authentication system",
-    ],
-  },
-  {
-    role: "Certification: Web Designing",
-    company: "Animax Animation Academy",
-    date: "Dec 2023",
-    logo: "https://yt3.googleusercontent.com/ytc/AIdro_lpRzMoBNFOJ4nS1G5BTXvdou_yMNa5_xXFJ5i1Aj4E6A=s900-c-k-c0x00ffffff-no-rj",
-    type: "Experience",
-  },
-  {
     role: "Coventry University, Softwarica College of IT",
     company: "BSc (Hons) in Computer Science/Computing",
     date: "2025 - Ongoing",
@@ -61,7 +27,7 @@ export const experiencesData = [
     role: "Khwopa Higher Secondary School ",
     company: "Grade 11, 12 ",
     date: "2023 - 2024",
-    logo: khwopalogo,
+    logo: "https://www.collegenp.com/uploads/2020/05/Khwopa-Secondary-School.png",
     type: "Education",
   },
   {

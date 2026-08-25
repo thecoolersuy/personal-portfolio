@@ -40,12 +40,9 @@ export default function Experience() {
           width: 0;
           height: 2.5px;
           border-radius: 1.25px;
-          background-color: #795547;
+          background-color: #ccd6f6;
           transform: translateX(-50%);
           transition: width 0.3s ease;
-        }
-        .tab-link.active::after {
-          width: 100%;
         }
         .tab-link:hover::after {
           width: 100%;
@@ -56,7 +53,7 @@ export default function Experience() {
         className="flex flex-col items-center pb-[32px] pt-[96px] w-full relative"
       >
         <div className="flex flex-col items-center w-full">
-          <h2 className="font-heading font-bold text-[#444] text-[41.6px] text-center ">
+          <h2 className="font-heading font-bold text-[#ccd6f6] text-[41.6px] text-center ">
             experience
           </h2>
           <div className="mt-2 flex items-center justify-center">
@@ -69,13 +66,13 @@ export default function Experience() {
         </div>
 
         <div className="flex flex-col gap-8 items-start max-w-[600px] pt-10 w-full px-4">
-          <div className="flex w-full justify-center gap-12 md:gap-6 border-b border-gray-200 pb-4">
+          <div className="flex w-full justify-center gap-12 md:gap-6  pb-4">
             <button
               onClick={() => setActiveTab("Education")}
               className={`tab-link cursor-pointer transition-colors ${
                 activeTab === "Education"
-                  ? "active text-[#795547]"
-                  : "text-gray-500 hover:text-gray-700"
+                  ? "active text-[#ccd6f6]"
+                  : "text-[#7b85a2] hover:text-[#7b85a2]"
               } ${activeTab === "Education" ? "active" : ""}`}
             >
               <img
@@ -95,8 +92,8 @@ export default function Experience() {
               onClick={() => setActiveTab("Experience")}
               className={`tab-link cursor-pointer transition-colors ${
                 activeTab === "Experience"
-                  ? "active text-[#795547]"
-                  : "text-gray-500 hover:text-gray-700"
+                  ? "active text-[#ccd6f6]"
+                  : "text-[#7b85a2] hover:text-[#7b85a2]"
               } ${activeTab === "Experience" ? "active" : ""}`}
             >
               <img
@@ -116,8 +113,8 @@ export default function Experience() {
               onClick={() => setActiveTab("Volunteering")}
               className={`tab-link cursor-pointer transition-colors ${
                 activeTab === "Volunteering"
-                  ? "active text-[#795547]"
-                  : "text-gray-500 hover:text-gray-700"
+                  ? "active text-[#ccd6f6]"
+                  : "text-[#7b85a2] hover:text-[#7b85a2]"
               } ${activeTab === "Volunteering" ? "active" : ""}`}
             >
               <img
@@ -137,8 +134,8 @@ export default function Experience() {
               onClick={() => setActiveTab("Award")}
               className={`tab-link cursor-pointer transition-colors flex flex-col items-center ${
                 activeTab === "Award"
-                  ? "active text-[#795547]"
-                  : "text-gray-500 hover:text-gray-700"
+                  ? "active text-[#ccd6f6]"
+                  : "text-[#7b85a2] hover:text-[#7b85a2]"
               } ${activeTab === "Award" ? "active" : ""}`}
             >
               <img
@@ -162,7 +159,7 @@ export default function Experience() {
                   onClick={() =>
                     setExpandedCard(expandedCard === index ? null : index)
                   }
-                  className="bg-white flex items-center p-[18px] rounded-t-[5px] shadow-[0px_2px_12px_0px_rgba(60,60,90,0.08),0px_1px_2px_0px_rgba(60,60,90,0.04)] w-full hover:shadow-[0px_6px_16px_0px_rgba(60,60,90,0.15)] transition-shadow relative z-10"
+                  className="bg-[#112240] flex items-center p-[18px] rounded-t-[5px] w-full relative z-10"
                 >
                   <div className="size-[35px] shadow-[0px_2px_12px_0px_rgba(60,60,90,0.08),0px_1px_2px_0px_rgba(60,60,90,0.04)] rounded-[5px] overflow-hidden flex-shrink-0">
                     <img
@@ -172,13 +169,13 @@ export default function Experience() {
                     />
                   </div>
                   <div className="flex flex-col items-start pl-[25px] pr-[15px] flex-grow min-w-0 w-full">
-                    <h3 className="font-body font-semibold text-[#333333] text-[18.7px] leading-snug mb-1 break-words text-left w-full">
+                    <h3 className="font-body font-semibold text-[#ccd6f6] text-[18.7px] leading-snug mb-1 break-words text-left w-full">
                       {exp.role}
                     </h3>
-                    <p className="font-body font-light text-[#595959] text-[16px] leading-snug mb-1 break-words text-left w-full">
+                    <p className="font-body font-light text-[#7b85a2] text-[16px] leading-snug mb-1 break-words text-left w-full">
                       {exp.company}
                     </p>
-                    <span className="font-light text-[#595959] text-[12px] whitespace-nowrap text-left w-full">
+                    <span className="font-light text-[#7b85a2] text-[12px] whitespace-nowrap text-left w-full">
                       {exp.date}
                     </span>
                     {exp.type === "Award" && (
@@ -187,7 +184,7 @@ export default function Experience() {
                           href={exp.credentialLink}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="inline-flex items-center gap-[7px] rounded-full ring-1 ring-inset ring-[#000000] opacity-70 px-[14px] py-[7px] font-body text-[14px] font-medium text-[#000000] transition-all duration-200 ease-in-out hover:ring-2 hover:opacity-90"
+                          className="inline-flex items-center gap-[7px] rounded-full ring-1 ring-inset ring-[#e3e3e3]  px-[14px] py-[7px] font-body text-[14px] font-medium text-[#e3e3e3] hover:text-[#eaebeb] transition-all duration-200 ease-in-out hover:ring-2 hover:ring-[#eaebeb]"
                         >
                           <span>Show credential</span>
                           <span aria-hidden="true">↗</span>
@@ -199,23 +196,27 @@ export default function Experience() {
                     <div
                       className={`flex items-center justify-center w-[30px] h-[30px] flex-shrink-0 ${expandedCard === index ? "rotate-180" : ""}`}
                     >
-                      <img
-                        src={dropdownIcon}
-                        alt="Toggle details"
-                        className="w-[15px] h-[15px] object-contain"
+                      <span
+                        aria-label="Toggle details"
+                        role="img"
+                        className="w-[15px] h-[15px] bg-[#7b85a2] [mask-position:center] [mask-repeat:no-repeat] [mask-size:contain]"
+                        style={{
+                          maskImage: `url(${dropdownIcon})`,
+                          WebkitMaskImage: `url(${dropdownIcon})`,
+                        }}
                       />
                     </div>
                   )}
                 </button>
                 {exp.description && expandedCard === index && (
-                  <div className="bg-white flex flex-col items-start pb-[15px] pl-[40px] pr-[25px] pt-[25px] rounded-bl-[5px] rounded-br-[5px] shadow-[0px_2px_12px_0px_rgba(60,60,90,0.08),0px_1px_2px_0px_rgba(60,60,90,0.04)] w-full animate-in fade-in duration-300 relative -mt-[1px]">
+                  <div className="bg-[#112240] border-t-2 border-[#0a192f] flex flex-col items-start pb-[15px] pl-[40px] pr-[25px] pt-[25px] rounded-bl-[5px] rounded-br-[5px] shadow-[0px_2px_12px_0px_rgba(60,60,90,0.08),0px_1px_2px_0px_rgba(60,60,90,0.04)] w-full animate-in fade-in duration-300 relative">
                     <ul className="space-y-[10px] w-full text-left">
                       {exp.description.map((point, idx) => (
                         <li
                           key={idx}
-                          className="font-body font-light text-[#595959] text-[16px] leading-relaxed flex gap-[10px] text-left"
+                          className="font-body font-light text-[#7b85a2] text-[16px] leading-relaxed flex gap-[10px] text-left"
                         >
-                          <span className="text-[#795547] font-bold mt-1 flex-shrink-0">
+                          <span className="text-[#7b85a2] font-bold mt-1 flex-shrink-0">
                             •
                           </span>
                           <span>{point}</span>
