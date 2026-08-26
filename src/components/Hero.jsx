@@ -2,15 +2,15 @@ import React from "react";
 import mailIcon from "../assets/othericons/email-bright.svg";
 import mailIconwhite from "../assets/othericons/email-white.svg";
 import birdGif from "../assets/othericons/bird.gif";
-import AsciiHandsCanvas from "./AsciiHandsCanvas";
+import AsciiHands from "../components/AsciiHands";
 
 export default function Hero() {
   return (
     <section
       id="hero"
-      className="w-full  bg-[#0a192f] flex items-center justify-center pt-[1px] md:pt-[115px] pb-[20px] md:pb-[2px] px-2"
+      className="w-full  bg-[#0a192f] flex flex-col  items-center justify-center pt-[1px] md:pt-[115px] pb-[20px] md:pb-[2px] px-2"
     >
-      <div className="max-w-[1100px] w-full grid grid-cols-1 md:grid-cols-[520px_minmax(0,580px)] gap-[1px] md:gap-[8px] items-center -translate-y-[105px] md:-translate-x-[80px]">
+      <div className="relative z-10 max-w-[1100px] w-full grid grid-cols-1 md:grid-cols-[520px_minmax(0,580px)] gap-[1px] md:gap-[8px] items-center -mt-[105px] md:-translate-x-[80px]">
         <div className="flex flex-col justify-center items-center gap-[5px] md:translate-x-[40px]">
           <img
             src={birdGif}
@@ -52,6 +52,9 @@ export default function Hero() {
             Say hi!
           </a>
         </div>
+      </div>
+      <div className="relative z-0 md:-top-[320px] -top-[30px] md:-mb-[310px] mb-[50px]">
+        <AsciiHands />
       </div>
     </section>
   );
