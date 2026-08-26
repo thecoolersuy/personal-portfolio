@@ -8,10 +8,10 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="w-full min-h-screen bg-[#0a192f] flex items-center justify-center pt-[1px] md:pt-[70px] pb-[20px] md:pb-[2px] px-2"
+      className="w-full  bg-[#0a192f] flex items-center justify-center pt-[1px] md:pt-[115px] pb-[20px] md:pb-[2px] px-2"
     >
-      <div className="max-w-[1100px] w-full grid grid-cols-1 md:grid-cols-[520px_minmax(0,580px)] gap-[2px] md:gap-[8px] items-center -translate-y-[105px] md:-translate-x-[80px]">
-        <div className="flex flex-col justify-center items-center gap-[14px] md:translate-x-[40px]">
+      <div className="max-w-[1100px] w-full grid grid-cols-1 md:grid-cols-[520px_minmax(0,580px)] gap-[1px] md:gap-[8px] items-center -translate-y-[105px] md:-translate-x-[80px]">
+        <div className="flex flex-col justify-center items-center gap-[5px] md:translate-x-[40px]">
           <img
             src={birdGif}
             alt="bird animation"
@@ -27,7 +27,7 @@ export default function Hero() {
             </span>{" "}
             here.
           </h1>
-          <p className="max-w-[800px] font-body font-medium text-[#7b85a2] text-center text-[18px] md:text-[17px] leading-[1.9rem]">
+          <p className="max-w-[800px] font-body font-medium text-[#7b85a2] text-center md:text-left text-[18px] md:text-[17px] leading-[1.9rem]">
             Software engineer (.NET / React) and casual outdoor wanderer in
             Nepal. I architect reliable .NET backends and React apps.
             Occasionally, I trade my keyboard for a hiking trail to test out new

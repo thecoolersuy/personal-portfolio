@@ -1,7 +1,7 @@
 import project1 from "../assets/othericons/project1.png";
 import project2 from "../assets/othericons/aqiapp.png";
 import project0 from "../assets/othericons/project0.png";
-import project4 from "../../public/dotnetweb.png";
+import project4 from "../../public/swagging.png";
 
 export const projectsData = [
   {

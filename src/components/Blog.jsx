@@ -30,20 +30,17 @@ export default function Blog() {
   return (
     <section
       id="blog"
-      className="flex flex-col items-center pb-[32px] pt-[96px] w-full relative"
+      className="flex flex-col items-center pb-[32px] pt-[96px] w-full relative scroll-mt-[50px] md:scroll-mt-[10px]"
     >
       <div className="flex flex-col items-center w-full gap-[10px]">
         <h2 className="font-heading font-bold text-[#ccd6f6] text-[41.6px] text-center ">
           <span>my </span>
           <span>blogs</span>
         </h2>
-        <div className="mt-2 flex items-center justify-center">
-          <img
-            src={blogsRanjana}
-            alt="blogs in Ranjana Lipi"
-            className="h-[67.5px] w-[120px] object-contain opacity-50"
-          />
-        </div>
+        <h2 className="ranjana font-bold text-[#ccd6f6] text-[32px] text-center mb-8 md:mb-8">
+          <span>मेरो </span>
+          <span>ब्लगहरू</span>
+        </h2>
       </div>
 
       <div className="relative w-full flex items-center justify-center pt-[20px] px-[41px]">
@@ -130,8 +127,8 @@ export default function Blog() {
             }}
             className={`rounded-full w-[25px] h-[25px] transition-all ${
               index === activeIndex
-                ? "bg-[#b8b1ae]"
-                : "bg-[#b8b1ae] opacity-20 hover:opacity-40"
+                ? "bg-[#ccd6f6]"
+                : "bg-[#ccd6f6] opacity-20 hover:opacity-40"
             }`}
           />
         ))}

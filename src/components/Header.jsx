@@ -62,8 +62,8 @@ export default function Header() {
         }
       `}</style>
       <header className="w-full fixed top-0 left-0 right-0 z-50 border-b border-[#233554] bg-[#0a192f] backdrop-blur-sm">
-        <div className="w-full max-w-[1200px] mx-auto min-h-[68px] md:h-[68px] flex flex-col md:flex-row items-center justify-center md:justify-between px-4 md:px-8 py-3 md:py-0 gap-3 md:gap-0">
-          <nav className="flex gap-[9px] md:gap-[20px] items-center text-left">
+        <div className="w-full max-w-[1200px] mx-auto min-h-[70px] md:h-[68px] flex flex-col md:flex-row items-center justify-center md:justify-between px-4 md:px-8 py-3 md:py-0 gap-5 md:gap-0 ">
+          <nav className="flex pt-3 md:pt-0 gap-[20px] md:gap-[20px] items-center text-left">
             <a
               href="#"
               className="nav-link font-body font-semibold text-[#ccd6f6] text-[16px] leading-normal hover:text-[#64ffda]"

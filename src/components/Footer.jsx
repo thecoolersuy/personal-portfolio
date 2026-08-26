@@ -83,7 +83,7 @@ export default function Footer() {
         </div>
         <div className="text-center">
           <p className="font-light text-[#7b85a2] text-[16px] flex gap-[10px] justify-center flex-wrap">
-            <span>©2026</span>
+            <span>©2025</span>
             <span>सुयल</span>
             <span>साहुखल</span>
           </p>

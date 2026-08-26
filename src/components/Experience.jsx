@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../index.css";
 import experienceRanjana from "../assets/ranjanalipiimages/experienceranjanalipi.png";
 import educationIcon from "../assets/othericons/education.png";
 import experienceIcon from "../assets/othericons/rocket.png";
@@ -50,19 +51,15 @@ export default function Experience() {
       `}</style>
       <section
         id="experience"
-        className="flex flex-col items-center pb-[32px] pt-[96px] w-full relative"
+        className="flex flex-col items-center pb-[32px] pt-[96px] w-full relative scroll-mt-[50px] md:scroll-mt-[10px]"
       >
         <div className="flex flex-col items-center w-full">
-          <h2 className="font-heading font-bold text-[#ccd6f6] text-[41.6px] text-center ">
+          <h2 className="font-heading font-bold  text-[#ccd6f6] text-[41.6px] text-center ">
             experience
           </h2>
-          <div className="mt-2 flex items-center justify-center">
-            <img
-              src={experienceRanjana}
-              alt="experience in Ranjana Lipi"
-              className="h-[67.5px] w-[120px] object-contain opacity-50"
-            />
-          </div>
+          <h2 className="ranjana  text-[#ccd6f6] text-[32px] text-center mb-4 ">
+            अनुभव
+          </h2>
         </div>
 
         <div className="flex flex-col gap-8 items-start max-w-[600px] pt-10 w-full px-4">

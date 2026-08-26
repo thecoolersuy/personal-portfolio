@@ -81,19 +81,15 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="flex flex-col items-center pb-[32px] pt-[96px] w-full relative"
+      className="flex flex-col items-center pb-[32px] pt-[96px] w-full relative scroll-mt-[50px] md:scroll-mt-[10px]"
     >
-      <div className="flex flex-col items-center w-full">
+      <div className="flex flex-col items-center w-full mb-8 md:mb-8">
         <h2 className="font-heading font-bold text-[#ccd6f6] text-[41.6px] text-center ">
           projects
         </h2>
-        <div className="mt-2 flex items-center justify-center">
-          <img
-            src={projectsRanjana}
-            alt="projects in Ranjana Lipi"
-            className="h-[67.5px] w-[120px] object-contain opacity-50"
-          />
-        </div>
+        <h2 className="ranjana font-bold text-[#ccd6f6] text-[32px] text-center ">
+          योजना
+        </h2>
       </div>
 
       <div className="relative w-full flex items-center justify-center pt-[15px] px-4">
@@ -133,7 +129,7 @@ export default function Projects() {
                       {project.technologies.map((tech, index) => (
                         <span
                           key={index}
-                          className="bg-[#ccd6f6] px-[6px] py-[5px] rounded-[2px] text-[14px] font-light text-[#0a192f] "
+                          className="font-body font-semibold bg-[#ccd6f6] px-[6px] py-[5px] rounded-[2px] text-[14px]  text-[#0a192f] "
                         >
                           {tech}
                         </span>
@@ -152,14 +148,14 @@ export default function Projects() {
         <button
           ref={prevRef}
           onClick={() => swiperRef.current?.swiper.slidePrev()}
-          className="absolute left-4 md:left-[362px] bg-[rgba(236,234,248,0.5)] hover:bg-[rgba(236,234,248,0.7)] rounded-[10px] w-[50px] h-[50px] flex items-center justify-center text-[#795547] text-[22px] font-normal transition-colors top-1/2 -translate-y-1/2 z-10"
+          className="absolute left-4 md:left-[362px] bg-[rgba(236,234,248,0.5)] hover:bg-[#ccd6f6] rounded-[10px] w-[50px] h-[50px] flex items-center justify-center text-[#795547] text-[22px] font-normal transition-colors top-1/2 -translate-y-1/2 z-10"
         >
           <img src={leftarrow} alt="Previous" />
         </button>
         <button
           ref={nextRef}
           onClick={() => swiperRef.current?.swiper.slideNext()}
-          className="absolute right-4 md:right-[362px] bg-[rgba(236,234,248,0.5)] hover:bg-[rgba(236,234,248,0.7)] rounded-[10px] w-[50px] h-[50px] flex items-center justify-center text-[#795547] text-[22px] font-normal transition-colors top-1/2 -translate-y-1/2 z-10"
+          className="absolute right-4 md:right-[362px] bg-[rgba(236,234,248,0.5)] hover:bg-[#ccd6f6] rounded-[10px] w-[50px] h-[50px] flex items-center justify-center text-[#795547] text-[22px] font-normal transition-colors top-1/2 -translate-y-1/2 z-10"
         >
           <img src={rightarrow} alt="Next" />
         </button>
@@ -174,8 +170,8 @@ export default function Projects() {
             }}
             className={`rounded-full w-[25px] h-[25px] transition-all ${
               index === activeIndex
-                ? "bg-[#b8b1ae]"
-                : "bg-[#b8b1ae] opacity-20 hover:opacity-40"
+                ? "bg-[#ccd6f6]"
+                : "bg-[#ccd6f6] opacity-20 hover:opacity-40"
             }`}
           />
         ))}
