@@ -47,14 +47,14 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-[#0a192f]  w-full pt-[150px] pb-[64px] px-4 sm:px-[441px]">
+    <footer className="bg-[#010409]  w-full pt-[150px] pb-[64px] px-4 sm:px-[441px]">
       <div className="max-w-[968px] w-full mx-auto flex flex-col gap-[32px]">
         <nav className="flex gap-[24px] justify-center flex-wrap">
           {navigationLinks.map((link) => (
             <a
               key={link.label}
               href={link.href}
-              className="font-light text-[#7b85a2] text-[16px] hover:text-[#333] transition-colors"
+              className="font-light text-[#7b85a2] text-[16px] hover:text-[#ffffff] transition-colors"
             >
               {link.label}
             </a>

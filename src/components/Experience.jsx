@@ -51,13 +51,13 @@ export default function Experience() {
       `}</style>
       <section
         id="experience"
-        className="flex flex-col items-center pb-[32px] pt-[96px] w-full relative scroll-mt-[50px] md:scroll-mt-[10px]"
+        className="flex flex-col items-center pb-[32px] pt-[96px] w-full relative scroll-mt-[50px] md:scroll-mt-[40px]"
       >
         <div className="flex flex-col items-center w-full">
-          <h2 className="font-heading font-bold  text-[#ccd6f6] text-[41.6px] text-center ">
+          <h2 className="font-heading font-bold  text-[#f0f6fc] text-[41.6px] text-center ">
             experience
           </h2>
-          <h2 className="ranjana  text-[#ccd6f6] text-[32px] text-center mb-4 ">
+          <h2 className="ranjana  text-[#f0f6fc] text-[32px] text-center mb-4 ">
             अनुभव
           </h2>
         </div>
@@ -156,7 +156,7 @@ export default function Experience() {
                   onClick={() =>
                     setExpandedCard(expandedCard === index ? null : index)
                   }
-                  className="bg-[#112240] flex items-center p-[18px] rounded-t-[5px] w-full relative z-10"
+                  className="bg-[#0d1117] border border-[#3d444d] flex items-center p-[18px] rounded-t-[5px] w-full relative z-10"
                 >
                   <div className="size-[35px] shadow-[0px_2px_12px_0px_rgba(60,60,90,0.08),0px_1px_2px_0px_rgba(60,60,90,0.04)] rounded-[5px] overflow-hidden flex-shrink-0">
                     <img
@@ -166,7 +166,7 @@ export default function Experience() {
                     />
                   </div>
                   <div className="flex flex-col items-start pl-[25px] pr-[15px] flex-grow min-w-0 w-full">
-                    <h3 className="font-body font-semibold text-[#ccd6f6] text-[18.7px] leading-snug mb-1 break-words text-left w-full">
+                    <h3 className="font-body font-semibold text-[#f0f6fc] text-[18.7px] leading-snug mb-1 break-words text-left w-full">
                       {exp.role}
                     </h3>
                     <p className="font-body font-light text-[#7b85a2] text-[16px] leading-snug mb-1 break-words text-left w-full">
@@ -206,7 +206,7 @@ export default function Experience() {
                   )}
                 </button>
                 {exp.description && expandedCard === index && (
-                  <div className="bg-[#112240] border-t-2 border-[#0a192f] flex flex-col items-start pb-[15px] pl-[40px] pr-[25px] pt-[25px] rounded-bl-[5px] rounded-br-[5px] shadow-[0px_2px_12px_0px_rgba(60,60,90,0.08),0px_1px_2px_0px_rgba(60,60,90,0.04)] w-full animate-in fade-in duration-300 relative">
+                  <div className="bg-[#151b23] border border-[#3d444d] flex flex-col items-start pb-[15px] pl-[40px] pr-[25px] pt-[25px] rounded-bl-[5px] rounded-br-[5px] shadow-[0px_2px_12px_0px_rgba(60,60,90,0.08),0px_1px_2px_0px_rgba(60,60,90,0.04)] w-full animate-in fade-in duration-300 relative">
                     <ul className="space-y-[10px] w-full text-left">
                       {exp.description.map((point, idx) => (
                         <li

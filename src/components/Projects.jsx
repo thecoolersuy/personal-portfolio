@@ -66,7 +66,7 @@ export default function Projects() {
                 href={link[index]}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-fit border border-[#0a192f] bg-[#ccd6f6]  px-[11px] py-[11px] flex items-center gap-[8px] text-[#0a192f] text-[16px] font-light  hover:border-[#0a192f] hover:shadow-[5px_5px_0px_0px_#0a192f] transition-all no-underline"
+                className="w-fit border-2 border-[#010409] bg-[#ccd6f6]  px-[11px] py-[11px] flex items-center gap-[8px] text-[#0a192f] text-[16px] font-light  hover:border-[#010409] hover:shadow-[5px_5px_0px_0px_#010409] transition-all no-underline"
               >
                 <span className="font-body font-semibold">{button}</span>
                 <img src={send} alt="send" className="w-[24px] h-[24px]" />
@@ -81,13 +81,13 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="flex flex-col items-center pb-[32px] pt-[96px] w-full relative scroll-mt-[50px] md:scroll-mt-[10px]"
+      className="flex flex-col items-center pb-[32px] pt-[96px] w-full relative scroll-mt-[50px] md:scroll-mt-[0px]"
     >
       <div className="flex flex-col items-center w-full mb-8 md:mb-8">
-        <h2 className="font-heading font-bold text-[#ccd6f6] text-[41.6px] text-center ">
+        <h2 className="font-heading font-bold text-[#f0f6fc] text-[41.6px] text-center ">
           projects
         </h2>
-        <h2 className="ranjana font-bold text-[#ccd6f6] text-[32px] text-center ">
+        <h2 className="ranjana font-bold text-[#f0f6fc] text-[32px] text-center ">
           योजना
         </h2>
       </div>
@@ -111,7 +111,7 @@ export default function Projects() {
         >
           {projects.map((project) => (
             <SwiperSlide key={project.id} className="flex justify-center">
-              <div className="w-full bg-[#112240] rounded-[3px] p-[25px] flex flex-col gap-[15px] ">
+              <div className="w-full bg-[#151b23] rounded-[3px] p-[25px] flex flex-col gap-[15px] ">
                 <div className="h-[360px] w-full  rounded overflow-hidden flex items-center justify-center">
                   <img
                     src={project.image}
@@ -121,7 +121,7 @@ export default function Projects() {
                 </div>
 
                 <div className="flex flex-col gap-3">
-                  <h3 className="font-body font-semibold text-[#ccd6f6] text-[24px] mb-[4px]">
+                  <h3 className="font-body font-semibold text-[#f0f6fc] text-[24px] mb-[4px]">
                     {project.name}
                   </h3>
                   {project.technologies && (
@@ -129,7 +129,7 @@ export default function Projects() {
                       {project.technologies.map((tech, index) => (
                         <span
                           key={index}
-                          className="font-body font-semibold bg-[#ccd6f6] px-[6px] py-[5px] rounded-[2px] text-[14px]  text-[#0a192f] "
+                          className="font-body font-semibold bg-[#ccd6f6] px-[6px] py-[5px] rounded-[2px] text-[14px]  text-[#010409] "
                         >
                           {tech}
                         </span>
@@ -170,8 +170,8 @@ export default function Projects() {
             }}
             className={`rounded-full w-[25px] h-[25px] transition-all ${
               index === activeIndex
-                ? "bg-[#ccd6f6]"
-                : "bg-[#ccd6f6] opacity-20 hover:opacity-40"
+                ? "bg-[#f0f6fc]"
+                : "bg-[#f0f6fc] opacity-20 hover:opacity-40"
             }`}
           />
         ))}

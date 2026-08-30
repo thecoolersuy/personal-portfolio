@@ -8,14 +8,14 @@ export default function About() {
   return (
     <section
       id="about"
-      className="w-full bg-[#0a192f] flex flex-col items-center -mt-[170px] py-20 lg:py-[2px] px-4 md:px-8 scroll-mt-[70px] md:scroll-mt-[110px]"
+      className="w-full bg-[#010409] flex flex-col items-center mt-[2px] md:mt-[210px] py-20  px-4 md:px-8 scroll-mt-[70px] md:scroll-mt-[70px]"
     >
       <div className="w-full max-w-[968px] flex flex-col items-center">
         <div className="flex flex-col items-center mb-10 relative gap-5">
-          <h2 className="font-heading font-bold text-[#ccd6f6] text-4xl lg:text-[41.6px] leading-none z-10 text-center">
+          <h2 className="font-heading font-bold text-[#f0f6fc] text-4xl lg:text-[41.6px] leading-none z-10 text-center">
             about me
           </h2>
-          <h2 className="ranjana font-bold text-[#ccd6f6] text-[32px] lg:text-[32px] leading-none z-10 text-center mb-6 ">
+          <h2 className="ranjana font-bold text-[#f0f6fc] text-[32px] lg:text-[32px] leading-none z-10 text-center mb-6 ">
             नमस्ते
           </h2>
         </div>
@@ -37,12 +37,12 @@ export default function About() {
               I’m a .NET and React Developer passionate about building reliable
               backend systems with clean, secure, and high-performance web
               applications from front to back. I'm currently building a
-              browser-based POS application{" "}
+              POSfor cafes{" "}
               <a
                 href="#"
-                className="text-[#64ffda] hover:underline transition-all"
+                className="text-[#1f6feb] hover:underline transition-all"
               >
-                Purr'Coffee POS
+                Free Dine
               </a>
               . I am pursuing my BSc(Hons) in Computing from Softwarica College
               of IT and e-Commerce, Coventry University. I enjoy building

@@ -30,14 +30,14 @@ export default function Blog() {
   return (
     <section
       id="blog"
-      className="flex flex-col items-center pb-[32px] pt-[96px] w-full relative scroll-mt-[50px] md:scroll-mt-[10px]"
+      className="flex flex-col items-center pb-[32px] pt-[96px] w-full relative scroll-mt-[50px] md:scroll-mt-[40px]"
     >
       <div className="flex flex-col items-center w-full gap-[10px]">
-        <h2 className="font-heading font-bold text-[#ccd6f6] text-[41.6px] text-center ">
+        <h2 className="font-heading font-bold text-[#f0f6fc] text-[41.6px] text-center ">
           <span>my </span>
           <span>blogs</span>
         </h2>
-        <h2 className="ranjana font-bold text-[#ccd6f6] text-[32px] text-center mb-8 md:mb-8">
+        <h2 className="ranjana font-bold text-[#f0f6fc] text-[32px] text-center mb-8 md:mb-8">
           <span>मेरो </span>
           <span>ब्लगहरू</span>
         </h2>
@@ -70,7 +70,7 @@ export default function Blog() {
         >
           {blogs.map((blog) => (
             <SwiperSlide key={blog.id} className="flex justify-center">
-              <div className="w-[351px] bg-[#0a192f] border border-[#233554] rounded-[3px]  p-[32px] flex flex-col gap-[15px]">
+              <div className="w-[351px] bg-[#010409] border border-[#3d444d] rounded-[3px]  p-[32px] flex flex-col gap-[15px]">
                 <div className="h-[190px] w-full bg-[#ccd6f6] rounded-[3px] overflow-hidden flex items-center justify-center">
                   <img
                     src={blog.image}
@@ -80,7 +80,7 @@ export default function Blog() {
                 </div>
 
                 <div className="pt-[24px]">
-                  <h3 className="font-light text-[#ccd6f6] text-[18.7px] mb-[16px]">
+                  <h3 className="font-light text-[#f0f6fc] text-[18.7px] mb-[16px]">
                     {blog.title}
                   </h3>
                   <p className="font-light text-[#7b85a2] text-[16px] leading-normal line-clamp-4">
@@ -92,7 +92,7 @@ export default function Blog() {
                   href={blog.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-body font-semibold mt-[16px] border border-[#112240] bg-[#ccd6f6]  px-[10px] py-[11px] text-[#0a192f] text-[16px] font-light hover:border-[#112240] hover:shadow-[5px_5px_0px_0px_#112240] transition-all text-center w-[100px]"
+                  className="font-body font-semibold mt-[16px] border  bg-[#ccd6f6]  px-[10px] py-[11px] text-[#0a192f] text-[16px] font-light   transition-all text-center w-[100px]"
                 >
                   <span>Read Blog</span>
                 </a>
@@ -127,8 +127,8 @@ export default function Blog() {
             }}
             className={`rounded-full w-[25px] h-[25px] transition-all ${
               index === activeIndex
-                ? "bg-[#ccd6f6]"
-                : "bg-[#ccd6f6] opacity-20 hover:opacity-40"
+                ? "bg-[#f0f6fc]"
+                : "bg-[#f0f6fc] opacity-20 hover:opacity-40"
             }`}
           />
         ))}
