@@ -1,3 +1,4 @@
+//Hero page
 import React from "react";
 import mailIcon from "../assets/othericons/email-bright.svg";
 import mailIconwhite from "../assets/othericons/email-white.svg";
@@ -53,8 +54,7 @@ export default function Hero() {
           </a>
         </div>
       </div>
-      <div className="relative z-0 md:-top-[320px] -top-[30px] md:-mb-[310px] mb-[50px]">
-      </div>
+      <div className="relative z-0 md:-top-[320px] -top-[30px] md:-mb-[310px] mb-[50px]"></div>
     </section>
   );
 }
