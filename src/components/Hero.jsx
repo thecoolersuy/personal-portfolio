@@ -38,15 +38,15 @@ export default function Hero() {
             href="https://www.linkedin.com/in/suyal-sahukhal-259a1b333/"
             target="_blank"
             rel="noopener noreferrer"
-            className="group flex items-center gap-[8px] px-[18px] py-[14px] border border-[#1f6feb] rounded-[5px] text-[#1f6feb] hover:text-[#ffffff] font-body font-semibold text-[16px] hover:bg-[#151b23] hover:-translate-y-[3px] transition-all"
+            className="group flex items-center gap-[8px] px-[18px] py-[14px] border border-[#ffffff] hover:border-[#1f6feb] rounded-[5px] text-[#ffffff] hover:text-[#1f6feb] font-body font-semibold text-[16px] hover:bg-[#151b23] hover:-translate-y-[3px] transition-all"
           >
             <img
-              src={mailIcon}
+              src={mailIconwhite}
               alt=""
               className="w-[25px] h-[25px] group-hover:hidden"
             />
             <img
-              src={mailIconwhite}
+              src={mailIcon}
               alt=""
               className="hidden w-[25px] h-[25px] group-hover:block"
             />

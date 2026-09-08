@@ -42,23 +42,25 @@ export default function Header() {
     <>
       <style>{`
         .nav-link {
-          position: relative;
-          display: inline-block;
+          display: block;
+          height: 1.25em;
+          overflow: hidden;
         }
-        .nav-link::after {
-          content: '';
-          position: absolute;
-          bottom: -4px;
-          left: 50%;
-          width: 0;
-          height: 2.5px;
-          border-radius: 1.25px;
-          background-color: #1f6feb;
-          transform: translateX(-50%);
-          transition: width 0.3s ease;
+        .nav-link-track {
+          display: block;
+          transition: transform 0.35s ease;
         }
-        .nav-link:hover::after {
-          width: 100%;
+        .nav-link:hover .nav-link-track,
+        .nav-link:focus-visible .nav-link-track {
+          transform: translateY(-50%);
+        }
+        .nav-link-text {
+          display: block;
+          height: 1.25em;
+          line-height: 1.25em;
+        }
+        .nav-link-text-reveal {
+          color: #ffffff;
         }
       `}</style>
       <header className="w-full fixed top-0 left-0 right-0 z-50 border-b border-[#3d444d] bg-[#0d1117] backdrop-blur-sm">
@@ -66,33 +68,73 @@ export default function Header() {
           <nav className="flex pt-3 md:pt-0 gap-[20px] md:gap-[20px] items-center text-left">
             <a
               href="#"
-              className="nav-link font-body font-semibold text-[#f0f6fc] text-[16px] leading-normal hover:text-[#1f6feb]"
+              className="nav-link font-body font-semibold text-[#f0f6fc] text-[16px] leading-normal hover:text-[#ffffff]"
             >
-              Home
+              <span className="nav-link-track">
+                <span className="nav-link-text">Home</span>
+                <span
+                  className="nav-link-text nav-link-text-reveal"
+                  aria-hidden="true"
+                >
+                  Home
+                </span>
+              </span>
             </a>
             <a
               href="#about"
-              className="nav-link font-body font-semibold text-[#f0f6fc] text-[16px] leading-normal hover:text-[#1f6feb]"
+              className="nav-link font-body font-semibold text-[#f0f6fc] text-[16px] leading-normal hover:text-[#ffffff]"
             >
-              About
+              <span className="nav-link-track">
+                <span className="nav-link-text">About</span>
+                <span
+                  className="nav-link-text nav-link-text-reveal"
+                  aria-hidden="true"
+                >
+                  About
+                </span>
+              </span>
             </a>
             <a
               href="#experience"
-              className="nav-link font-body font-semibold text-[#f0f6fc] text-[16px] leading-normal hover:text-[#1f6feb]"
+              className="nav-link font-body font-semibold text-[#f0f6fc] text-[16px] leading-normal hover:text-[#ffffff]"
             >
-              Experience
+              <span className="nav-link-track">
+                <span className="nav-link-text">Experience</span>
+                <span
+                  className="nav-link-text nav-link-text-reveal"
+                  aria-hidden="true"
+                >
+                  Experience
+                </span>
+              </span>
             </a>
             <a
               href="#projects"
-              className="nav-link font-body font-semibold text-[#f0f6fc] text-[16px] leading-normal hover:text-[#1f6feb]"
+              className="nav-link font-body font-semibold text-[#f0f6fc] text-[16px] leading-normal hover:text-[#ffffff]"
             >
-              Projects
+              <span className="nav-link-track">
+                <span className="nav-link-text">Projects</span>
+                <span
+                  className="nav-link-text nav-link-text-reveal"
+                  aria-hidden="true"
+                >
+                  Projects
+                </span>
+              </span>
             </a>
             <a
               href="#blog"
-              className="nav-link font-body font-semibold text-[#f0f6fc] text-[16px] leading-normal hover:text-[#1f6feb]"
+              className="nav-link font-body font-semibold text-[#f0f6fc] text-[16px] leading-normal hover:text-[#ffffff]"
             >
-              Blog
+              <span className="nav-link-track">
+                <span className="nav-link-text">Blog</span>
+                <span
+                  className="nav-link-text nav-link-text-reveal"
+                  aria-hidden="true"
+                >
+                  Blog
+                </span>
+              </span>
             </a>
           </nav>
           <div className="flex items-center justify-center gap-3">
