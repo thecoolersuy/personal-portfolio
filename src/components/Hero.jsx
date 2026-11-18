@@ -21,14 +21,14 @@ export default function Hero() {
         </div>
 
         <div className="flex flex-col items-center gap-[40px] text-center md:pl-[100px] md:items-start ">
-          <h1 className="font-body font-light text-[#f0f6fc] text-[58px] md:text-[67px] leading-none whitespace-nowrap">
+          <h1 className="font-body font-bold text-[#4390ff] text-[58px] md:text-[70px] leading-none whitespace-nowrap">
             hi,{" "}
-            <span className="font-body font-bold text-[62px] md:text-[67px] text-[#1f6feb]">
+            <span className="font-body font-bold text-[59px] md:text-[70px] text-[#4390ff]">
               suyal
             </span>{" "}
             here.
           </h1>
-          <p className="w-full md:min-w-[620px] md:max-w-[800px] font-body font-medium text-[#7b85a2] text-center md:text-left text-[18px] md:text-[17px] leading-[1.9rem]">
+          <p className="w-full px-5 md:px-0 md:min-w-[620px] md:max-w-[800px] font-body font-medium text-[#7b85a2] text-center md:text-left text-[18px] md:text-[17px] leading-[1.9rem]">
             Software engineer (.NET / React) and casual outdoor wanderer in
             Nepal. I architect reliable .NET backends and React apps.
             Occasionally, I trade my keyboard for a hiking trail to test out new

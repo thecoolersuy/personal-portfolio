@@ -36,7 +36,7 @@ export default function About() {
               backend systems with clean, secure, and high-performance web
               applications. Previously, I was working as a software engineer
               intern at{" "}
-              <strong className="font-bold text-[#1f6feb]">Webbing Plex</strong>
+              <strong className="font-bold text-[#4390ff]">Webbing Plex</strong>
             </p>
 
             <p className="m-0 text-center md:text-left lg:text-justify">
@@ -47,7 +47,7 @@ export default function About() {
               {[".NET", "Typescript", "React.js", "C#", "Javascript ES6+"].map(
                 (technology) => (
                   <li key={technology} className="relative pl-4">
-                    <span className="absolute left-0 text-[14px] text-[#1f6feb]">
+                    <span className="absolute left-0 text-[14px] text-[#4390ff]">
                       ▹
                     </span>
                     {technology}
