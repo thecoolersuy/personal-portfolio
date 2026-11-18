@@ -2,10 +2,34 @@ import project1 from "../assets/othericons/project1.png";
 import project2 from "../assets/othericons/aqiapp.png";
 import project0 from "../assets/othericons/project0.png";
 import project4 from "../../public/swagging.png";
+import digiloan from "../../public/digiloan.png";
 
 export const projectsData = [
   {
     id: 1,
+    name: "DigiLoan (Micro-lending & Escrow Ledger)",
+    description: ` • Protected loan disbursement against concurrent requests using EF Core transactions and SQL Server rowversion optimistic concurrency on an immutable double-entry ledger.\n
+       • Built a LINQ credit-scoring engine over 30 days of ledger data, with an quote endpoint so users can check their loan terms before applying.\n
+       • Backed it with xUnit, Testcontainers in Docker for integration tests and architecture tests, deployed the API and the database on MonsterASP.NET`,
+    image: digiloan,
+    link: [
+      "https://digiloan.vercel.app/login",
+      "https://github.com/thecoolersuy/digiloan-escrow-ledger",
+    ],
+    technologies: [
+      "C#",
+      "ASP.NET Core",
+      "EF Core",
+      "SQL Server",
+      "xUnit",
+      "TypeScript",
+      "Tanstack Query",
+    ],
+    featured: true,
+    button: ["Try app", "GitHub"],
+  },
+  {
+    id: 2,
     name: " E-Commerce API",
     description: ` • Architected a Clean Architecture REST API that completely decouples business logic from database implementations\n
        • Implemented dependency injection to seamlessly swap in-memory storage for SQLite with zero controller code changes \n
@@ -26,7 +50,7 @@ export const projectsData = [
     button: ["GitHub"],
   },
   {
-    id: 2,
+    id: 3,
     name: "Baakas",
     description: ` • Eliminated slow initial load by implementing route-based code splitting with React.lazy and added preloading ,separated vendor libraries into manual chunks to maximise browser cache reuse across deployments\n
        • Optimised rendering performance using memo/useCallback and selector-based Zustand subscriptions, preventing unnecessary re-renders \n \n
@@ -49,7 +73,7 @@ export const projectsData = [
     button: ["Try app", "GitHub"],
   },
   {
-    id: 3,
+    id: 4,
     name: "Writr",
     description: [
       "Built a dev blogging platform where authenticated users can create, edit, and delete rich-text blog posts with image uploads.",
@@ -63,7 +87,7 @@ export const projectsData = [
     button: ["Try app"],
   },
   {
-    id: 4,
+    id: 5,
     name: "AQI Monitor & Weather Forecast App",
     description: [
       "Built a responsive, lightweight web app that displays real-time AQI data and weather forecasts for any location.",
